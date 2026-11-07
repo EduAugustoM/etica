@@ -1,0 +1,6 @@
+.vercel
+node_modules
+scratch
+*.log
+.system_generated
+.gemini
