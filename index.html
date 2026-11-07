@@ -1,652 +1,1084 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CRIMES//CIBER — Direito Penal e Crimes Cibernéticos</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;600;800&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRIMES//CIBER — Direito Penal e Crimes Cibernéticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;600;800&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div id="viewport"><div class="stage" id="stage">
+  <div id="viewport">
+    <div class="stage" id="stage">
 
-<!-- ============ 01 CAPA ============ -->
-<section class="slide" data-sec="00" data-title="BOOT_SEQUENCE">
-  <div class="pixel-v lime" style="right:70px;top:120px">CRIMES CIBER</div>
-  <div class="cover-img img-frame"><img src="assets/cover.jpg" alt=""></div>
-  <svg class="globe" style="right:480px;bottom:70px;width:340px;height:340px" viewBox="-110 -110 220 220"><g fill="none" stroke="currentColor" stroke-width="1.2"><circle r="100"/><ellipse rx="100" ry="30"/><ellipse rx="100" ry="65"/><line x1="-100" x2="100"/><ellipse ry="100" rx="20"><animate attributeName="rx" values="0;100;0" dur="6s" repeatCount="indefinite"/></ellipse><ellipse ry="100" rx="60"><animate attributeName="rx" values="60;100;0;60" dur="6s" repeatCount="indefinite"/></ellipse><ellipse ry="100" rx="90"><animate attributeName="rx" values="90;0;100;90" dur="6s" repeatCount="indefinite"/></ellipse></g></svg>
-  <div style="position:absolute;left:120px;top:150px;width:1250px">
-    <div class="kicker">SEMINÁRIO // LEGISLAÇÃO E ÉTICA · SISTEMAS DE INFORMAÇÃO</div>
-    <h1 class="h-xxl glitch" data-text="CRIMES">CRIMES</h1>
-    <h1 class="h-xxl outline">CIBERNÉTICOS</h1>
-    <div class="row" style="margin-top:34px;gap:24px;align-items:center">
-      <span class="pill lime">Direito Penal</span>
-      <span class="mono dim" style="font-size:24px">invasão · fraude · vazamento · responsabilidade penal do profissional de TI</span>
+      <!-- ============ 01 CAPA ============ -->
+      <section class="slide" data-sec="00" data-title="BOOT_SEQUENCE">
+        <div class="pixel-v lime" style="right:70px;top:120px">CRIMES CIBER</div>
+        <div class="cover-img img-frame"><img src="assets/cover.jpg" alt=""></div>
+        <svg class="globe" style="right:480px;bottom:70px;width:340px;height:340px" viewBox="-110 -110 220 220">
+          <g fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle r="100" />
+            <ellipse rx="100" ry="30" />
+            <ellipse rx="100" ry="65" />
+            <line x1="-100" x2="100" />
+            <ellipse ry="100" rx="20">
+              <animate attributeName="rx" values="0;100;0" dur="6s" repeatCount="indefinite" />
+            </ellipse>
+            <ellipse ry="100" rx="60">
+              <animate attributeName="rx" values="60;100;0;60" dur="6s" repeatCount="indefinite" />
+            </ellipse>
+            <ellipse ry="100" rx="90">
+              <animate attributeName="rx" values="90;0;100;90" dur="6s" repeatCount="indefinite" />
+            </ellipse>
+          </g>
+        </svg>
+        <div style="position:absolute;left:120px;top:150px;width:1250px">
+          <div class="kicker">SEMINÁRIO // LEGISLAÇÃO E ÉTICA · SISTEMAS DE INFORMAÇÃO</div>
+          <h1 class="h-xxl glitch" data-text="CRIMES">CRIMES</h1>
+          <h1 class="h-xxl outline">CIBERNÉTICOS</h1>
+          <div class="row" style="margin-top:34px;gap:24px;align-items:center">
+            <span class="pill lime">Direito Penal</span>
+            <span class="mono dim" style="font-size:24px">invasão · fraude · vazamento · responsabilidade penal do
+              profissional de TI</span>
+          </div>
+        </div>
+        <div class="sticker violet" style="left:120px;bottom:150px">Integrantes: Eduardo Augusto, João Marcos e Marcos
+          Vinícius<br>Prof.: Ana Clara · 09/11/2026</div>
+        <aside class="notes">Apresentar o grupo e o tema. Avisar a ordem: conceitos jurídicos, legislação, vídeos
+          integrados, notícias, estudo de caso real e discussão.</aside>
+      </section>
+
+      <!-- ============ 02 SUMÁRIO ============ -->
+      <section class="slide cream" data-sec="01" data-title="INDEX.SYS">
+        <div class="g2" style="grid-template-columns:0.9fr 1.1fr;height:100%;align-items:center">
+          <div>
+            <div class="kicker ink">ROTEIRO // O QUE VAMOS VER</div>
+            <h2 class="h-xl">MAPA DA<br>MISSÃO</h2>
+            <div class="block-lime" style="margin-top:40px">
+              <div class="mono" style="font-size:22px">// objetivo</div>
+              <p style="font-size:30px;margin-top:8px">Entender <b>quando</b> uma conduta na rede vira crime,
+                <b>qual</b> lei se aplica e <b>como</b> isso atinge o profissional de TI.</p>
+            </div>
+          </div>
+          <ol class="index">
+            <li><span>01_</span> Noções de Direito Penal</li>
+            <li><span>02_</span> Crimes cibernéticos, marcos legais e vídeos</li>
+            <li><span>03_</span> Invasão de dispositivo informático</li>
+            <li><span>04_</span> Fraudes eletrônicas</li>
+            <li><span>05_</span> Vazamento indevido de informações</li>
+            <li><span>06_</span> Prova digital</li>
+            <li><span>07_</span> Responsabilidade do profissional de TI</li>
+            <li><span>08_</span> Notícias: Binance × freezers na Europa</li>
+            <li><span>09_</span> Estudo de caso real: C&amp;M Software / PIX</li>
+            <li><span>10_</span> Discussão com a turma</li>
+          </ol>
+        </div>
+        <aside class="notes">Explicar o fio condutor: cada conceito é ilustrado com vídeos, notícias recentes e um
+          estudo de caso prático.</aside>
+      </section>
+
+      <!-- ============ 03 CONTEXTO ============ -->
+      <section class="slide" data-sec="01" data-title="CONTEXTO">
+        <div class="pixel-v violet" style="left:40px;top:140px">ONLINE</div>
+        <div style="padding-left:80px">
+          <div class="kicker">CONTEXTO // POR QUE ESSE TEMA IMPORTA</div>
+          <h2 class="h-xl">O CRIME <span class="hl-lime">MIGROU</span><br>DA RUA PARA A REDE</h2>
+          <div class="g3" style="margin-top:50px">
+            <div class="panel">
+              <div class="num">01</div>
+              <h4>Escala</h4>
+              <p>A popularização da internet, do PIX e do celular aumentou o número de vítimas e reduziu o custo do
+                crime. O mesmo golpe atinge milhares de pessoas instantaneamente.</p>
+            </div>
+            <div class="panel">
+              <div class="num">02</div>
+              <h4>Anonimato e fronteiras</h4>
+              <p>VPN, deep/dark web, criptoativos e servidores no exterior dificultam a identificação da autoria e
+                exigem cooperação jurídica internacional.</p>
+            </div>
+            <div class="panel">
+              <div class="num">03</div>
+              <h4>Novas ferramentas</h4>
+              <p>IA generativa cria deepfakes e golpes altamente realistas. Dispositivos IoT industriais e domésticos
+                tornam-se vetores de invasão e sabotagem.</p>
+            </div>
+          </div>
+        </div>
+        <aside class="notes">O crime tradicional migrou em massa para os meios digitais pela escala, baixo custo e
+          sensação de anonimato.</aside>
+      </section>
+
+      <!-- ============ 04 DIREITO PENAL: PRINCÍPIOS ============ -->
+      <section class="slide" data-sec="01" data-title="DIREITO_PENAL.BASE">
+        <div class="g2" style="grid-template-columns:1fr 1fr;gap:70px">
+          <div>
+            <div class="kicker">01 // NOÇÕES DE DIREITO PENAL</div>
+            <h2 class="h-xl">SEM LEI,<br><span class="outline">SEM CRIME</span></h2>
+            <div class="law" style="margin-top:36px">
+              <div class="law-tag">ART. 5º, XXXIX, CF · ART. 1º, CP</div>
+              "Não há crime sem lei anterior que o defina, nem pena sem prévia cominação legal."
+            </div>
+            <p class="dim" style="margin-top:24px">O Direito Penal é a <b>ultima ratio</b>: o Estado só aplica penas
+              criminais para proteger os bens jurídicos mais fundamentais (vida, patrimônio, privacidade, segurança dos
+              sistemas).</p>
+          </div>
+          <div class="stack">
+            <div class="panel line-lime">
+              <h4>Legalidade / reserva legal</h4>
+              <p>Só lei federal em sentido estrito cria crime e comina pena (art. 22, I, CF).</p>
+            </div>
+            <div class="panel line-lime">
+              <h4>Anterioridade</h4>
+              <p>A lei penal não retroage para prejudicar o réu (art. 5º, XL, CF).</p>
+            </div>
+            <div class="panel line-lime">
+              <h4>Taxatividade</h4>
+              <p>O tipo penal precisa ser preciso e claro. É proibida a <b>analogia contra o réu</b> (in malam partem).
+              </p>
+            </div>
+            <div class="panel line-violet">
+              <h4>Por isso foram criadas leis específicas</h4>
+              <p>Até 2012, invadir um computador alheio não era crime autônomo no Brasil. O caso Carolina Dieckmann
+                motivou a criação da <b>Lei 12.737/2012</b>.</p>
+            </div>
+          </div>
+        </div>
+        <aside class="notes">Sem tipo penal prévio e taxativo, o fato é atípico na esfera criminal. Por isso leis novas
+          foram necessárias.</aside>
+      </section>
+
+      <!-- ============ 05 CONCEITO ANALÍTICO ============ -->
+      <section class="slide cream" data-sec="01" data-title="CRIME = F(T,I,C)">
+        <div class="kicker ink">01 // CONCEITO ANALÍTICO DE CRIME</div>
+        <h2 class="h-l">CRIME = FATO TÍPICO + ILÍCITO + CULPÁVEL</h2>
+        <div class="g3" style="margin-top:44px">
+          <div class="card-dark">
+            <div class="tag-mono">// 01 FATO TÍPICO</div>
+            <p>Conduta + resultado + nexo causal + <b>tipicidade</b> (perfeito amoldamento à descrição prevista em lei).
+            </p>
+            <div class="ex">TI: invadir sistema de terceiro sem autorização para obter dados configura o tipo do art.
+              154-A.</div>
+          </div>
+          <div class="card-dark">
+            <div class="tag-mono">// 02 ILICITUDE</div>
+            <p>A conduta contraria a ordem jurídica. Excludentes: legítima defesa, estado de necessidade e <b>exercício
+                regular de direito</b> (art. 23).</p>
+            <div class="ex">TI: um pentest com contrato assinado e escopo delimitado pelo proprietário é lícito porque
+              autorizado.</div>
+          </div>
+          <div class="card-dark">
+            <div class="tag-mono">// 03 CULPABILIDADE</div>
+            <p>Reprovação pessoal sobre o autor: imputabilidade, potencial consciência da ilicitude (art. 21) e
+              exigibilidade de conduta diversa.</p>
+            <div class="ex">TI: a alegação de "desconhecer que era ilícito" raramente se sustenta para profissionais
+              técnicos qualificados.</div>
+          </div>
+        </div>
+        <aside class="notes">Mostrar que o mesmo ato técnico (como um scan de vulnerabilidade) pode ser crime ou dever
+          profissional, dependendo da autorização.</aside>
+      </section>
+
+      <!-- ============ 06 ELEMENTOS ÚTEIS ============ -->
+      <section class="slide" data-sec="01" data-title="KERNEL_PENAL">
+        <div class="kicker">01 // CONCEITOS QUE APARECEM NOS CRIMES DIGITAIS</div>
+        <h2 class="h-l">6 CHAVES DE LEITURA</h2>
+        <div class="g3" style="margin-top:36px;row-gap:28px">
+          <div class="panel">
+            <div class="tag-mono lime">ART. 18</div>
+            <h4>Dolo × culpa</h4>
+            <p>Os crimes cibernéticos previstos no CP são <b>dolosos</b>. Não existe modalidade de "invasão culposa".
+              Negligência técnica gera responsabilidade civil ou administrativa.</p>
+          </div>
+          <div class="panel">
+            <div class="tag-mono lime">ART. 14</div>
+            <h4>Tentativa</h4>
+            <p>Início da execução que não se consuma por motivos alheios à vontade do agente (ex.: fraude barrada pelo
+              filtro antifraude). Pena reduzida de 1/3 a 2/3.</p>
+          </div>
+          <div class="panel">
+            <div class="tag-mono lime">ART. 29</div>
+            <h4>Concurso de pessoas</h4>
+            <p>Quem concorre para o crime responde pelas penas a ele cominadas. Quem vende credenciais ou cede
+              infraestrutura responde pelo resultado lesivo.</p>
+          </div>
+          <div class="panel">
+            <div class="tag-mono violet">ART. 13, §2º</div>
+            <h4>Omissão imprópria</h4>
+            <p>Responde criminalmente quem tinha o <b>dever jurídico de agir</b> para evitar o resultado (garantidor),
+              podia agir e omitiu-se dolosamente.</p>
+          </div>
+          <div class="panel">
+            <div class="tag-mono violet">ARTS. 6º e 7º</div>
+            <h4>Lugar do crime</h4>
+            <p>Pela teoria da ubiquidade, considera-se praticado o crime onde ocorreu a ação ou onde se produziu o
+              resultado. Aplicação da lei brasileira em crimes transnacionais.</p>
+          </div>
+          <div class="panel">
+            <div class="tag-mono violet">ART. 22</div>
+            <h4>Ordem de superior</h4>
+            <p>Só isenta de pena a obediência a ordem não manifestamente ilegal advinda de autoridade <b>pública</b>. Em
+              empresas privadas, ordens ilegais não isentam o profissional de TI.</p>
+          </div>
+        </div>
+        <aside class="notes">Conceitos fundamentais para compreender o enquadramento do insider de TI no estudo de caso.
+        </aside>
+      </section>
+
+      <!-- ============ 07 CRIMES CIBERNÉTICOS / TIMELINE ============ -->
+      <section class="slide" data-sec="02" data-title="CIBERCRIME.DEF">
+        <div class="g2" style="grid-template-columns:0.85fr 1.15fr;gap:60px">
+          <div>
+            <div class="kicker">02 // CRIMES CIBERNÉTICOS</div>
+            <h2 class="h-l">PRÓPRIOS<br><span class="outline">×</span> IMPRÓPRIOS</h2>
+            <div class="panel line-lime" style="margin-top:30px">
+              <h4>Próprios (puros)</h4>
+              <p>O próprio sistema ou dado informático é o bem jurídico diretamente atacado: invasão de computadores,
+                DDoS, sabotagem de dispositivos conectados.</p>
+            </div>
+            <div class="panel line-violet" style="margin-top:20px">
+              <h4>Impróprios (mistos)</h4>
+              <p>O meio digital é utilizado como <b>instrumento</b> para praticar infrações tradicionais: fraudes,
+                extorsão, ameaça e crimes contra a honra.</p>
+            </div>
+          </div>
+          <div>
+            <div class="tag-mono lime" style="margin-bottom:18px">// LINHA DO TEMPO LEGISLATIVA</div>
+            <div class="timeline">
+              <div><b>2012</b><span>Lei 12.737 (Carolina Dieckmann): tipifica o art. 154-A do CP. Lei 12.735: criação de
+                  delegacias especializadas em cibercrimes.</span></div>
+              <div><b>2014</b><span>Lei 12.965 (Marco Civil da Internet): guarda compulsória de registros de conexão e
+                  de aplicação.</span></div>
+              <div><b>2018</b><span>Lei 13.709 (LGPD) e Lei 13.718 (art. 218-C: divulgação não consentida de cena de
+                  sexo ou nudez).</span></div>
+              <div><b>2021</b><span>Lei 14.155: agrava a invasão de dispositivo e tipifica a fraude eletrônica. Lei
+                  14.132: perseguição digital (art. 147-A).</span></div>
+              <div><b>2022</b><span>Lei 14.478 (Marco dos Criptoativos): tipifica o art. 171-A (fraude com ativos
+                  virtuais).</span></div>
+              <div><b>2023</b><span>Decreto 11.491: promulgação oficial da Convenção de Budapeste sobre
+                  Cibercrime.</span></div>
+              <div><b>2024</b><span>Lei 14.811: tipifica a intimidação sistemática virtual / cyberbullying (art.
+                  146-A).</span></div>
+            </div>
+          </div>
+        </div>
+        <aside class="notes">Apresentar a distinção entre crimes próprios e impróprios. Em seguida, assistiremos ao
+          Vídeo 01 com a explicação detalhada do especialista.</aside>
+      </section>
+
+      <!-- ============ 08 VÍDEO 01 (SOLO) ============ -->
+      <section class="slide v-solo" data-sec="02" data-title="VIDEO_01">
+        <div class="kicker">02.1 // VÍDEO 01 · JOVEM PAN NEWS / DISCUTINDO DIREITO (6:59)</div>
+        <h2 class="h-m">O QUE SÃO CRIMES CIBERNÉTICOS E POR QUE ELES CRESCEM TANTO?</h2>
+        <div class="solo-frame">
+          <iframe data-id="UqOcX1VHTos" title="V01"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="solo-ctx">
+          <div class="tag-mono lime">// CONTEXTO</div>
+          <p>O professor José Milagre explica o conceito de crimes cibernéticos, como a popularização da internet e do
+            PIX acelerou a migração do crime tradicional para o ambiente digital, e os desafios das autoridades
+            policiais frente ao uso de VPNs, inteligência artificial e a dark web.</p>
+        </div>
+        <aside class="notes">Vídeo 01 completo do Professor José Milagre sobre conceito, escala e investigação de
+          cibercrimes.</aside>
+      </section>
+
+      <!-- ============ 09 MAPA DE CRIMES ============ -->
+      <section class="slide cream" data-sec="02" data-title="THREAT_MAP">
+        <div class="kicker ink">02 // MAPA RÁPIDO: CONDUTA → TIPO PENAL</div>
+        <h2 class="h-l">O QUE APARECE NA DELEGACIA</h2>
+        <table class="tbl light" style="margin-top:30px">
+          <tr>
+            <th>Conduta digital</th>
+            <th>Tipo penal</th>
+            <th>Pena-base</th>
+          </tr>
+          <tr>
+            <td>Invadir celular, conta ou servidor</td>
+            <td>Art. 154-A CP</td>
+            <td>Reclusão 1–4 anos e multa</td>
+          </tr>
+          <tr>
+            <td>Golpe por WhatsApp, e-mail ou ligação (vítima entrega dados)</td>
+            <td>Art. 171, §2º-A CP</td>
+            <td>Reclusão 4–8 anos e multa</td>
+          </tr>
+          <tr>
+            <td>Desvio de valores manipulando sistema</td>
+            <td>Art. 155, §4º-B CP</td>
+            <td>Reclusão 4–8 anos e multa</td>
+          </tr>
+          <tr>
+            <td>Calúnia, difamação ou injúria em rede social</td>
+            <td>Arts. 138–140 c/c art. 141, §2º CP</td>
+            <td>Pena <b>aplicada em triplo</b></td>
+          </tr>
+          <tr>
+            <td>Injúria racial on-line</td>
+            <td>Art. 2º-A, Lei 7.716/89</td>
+            <td>Reclusão 2–5 anos e multa</td>
+          </tr>
+          <tr>
+            <td>Divulgar nudez ou sexo sem consentimento</td>
+            <td>Art. 218-C CP</td>
+            <td>Reclusão 1–5 anos</td>
+          </tr>
+          <tr>
+            <td>Montagem/deepfake sexual com criança ou adolescente</td>
+            <td>Art. 241-C ECA</td>
+            <td>Reclusão 1–3 anos e multa</td>
+          </tr>
+          <tr>
+            <td>Perseguição / cyberstalking</td>
+            <td>Art. 147-A CP</td>
+            <td>Reclusão 6 meses–2 anos e multa</td>
+          </tr>
+        </table>
+        <aside class="notes">Panorama das ocorrências mais frequentes nas delegacias. A seguir, vemos a reportagem sobre
+          manipulação por IA e crianças.</aside>
+      </section>
+
+      <!-- ============ 10 VÍDEO 02 (SOLO) ============ -->
+      <section class="slide v-solo" data-sec="02" data-title="VIDEO_02">
+        <div class="kicker">02.2 // VÍDEO 02 · SBT BRASIL / SBT NEWS (3:23)</div>
+        <h2 class="h-m">IA DIFICULTA COMBATE A CRIMES CIBERNÉTICOS E COLOCA CRIANÇAS EM RISCO</h2>
+        <div class="solo-frame">
+          <iframe data-id="lo9oHmivXQw" title="V02"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="solo-ctx">
+          <div class="tag-mono lime">// CONTEXTO</div>
+          <p>Reportagem do SBT Brasil destaca como ferramentas de inteligência artificial têm sido utilizadas para criar
+            vídeos e montagens falsas indistinguíveis da realidade, aumentando os riscos de crimes cibernéticos e de
+            exploração infantil na internet.</p>
+        </div>
+        <aside class="notes">Vídeo 02 completo: a IA como facilitadora de novas ameaças e vulnerabilidade de crianças.
+        </aside>
+      </section>
+
+      <!-- ============ 11 INVASÃO — ANATOMIA ============ -->
+      <section class="slide" data-sec="03" data-title="ART_154-A.EXE">
+        <div class="pixel-v lime" style="right:60px;top:130px">154-A</div>
+        <div class="kicker">03 // INVASÃO DE DISPOSITIVO INFORMÁTICO</div>
+        <h2 class="h-l">ANATOMIA DO <span class="hl-lime">ART. 154-A</span></h2>
+        <div class="law big" style="margin-top:26px;max-width:1500px">
+          <div class="law-tag">ART. 154-A CP — REDAÇÃO DA LEI 14.155/2021</div>
+          "<u>Invadir</u> dispositivo informático <u>de uso alheio</u>, conectado ou não à rede de computadores, <u>com
+            o fim de</u> obter, adulterar ou destruir dados ou informações <u>sem autorização expressa ou tácita do
+            usuário</u> do dispositivo ou de instalar vulnerabilidades para obter vantagem ilícita."
+        </div>
+        <div class="g4" style="margin-top:34px;max-width:1560px">
+          <div class="panel">
+            <div class="tag-mono lime">NÚCLEO</div>
+            <p><b>Invadir</b>: ingressar indevidamente, de forma física ou remota.</p>
+          </div>
+          <div class="panel">
+            <div class="tag-mono lime">OBJETO</div>
+            <p>Qualquer <b>dispositivo informático</b>: PC, smartphone, servidor, nuvem, roteador, <b>controlador
+                IoT</b>.</p>
+          </div>
+          <div class="panel">
+            <div class="tag-mono lime">DOLO ESPECÍFICO</div>
+            <p>"Com o fim de" obter, adulterar ou destruir dados, ou de instalar vulnerabilidades.</p>
+          </div>
+          <div class="panel">
+            <div class="tag-mono lime">SEM AUTORIZAÇÃO</div>
+            <p>Elemento nuclear. Havendo autorização legítima (pentest contratado), não há crime.</p>
+          </div>
+        </div>
+        <div class="row" style="margin-top:30px;gap:30px;align-items:stretch;max-width:1560px">
+          <div class="diff"><span class="mono dim">ANTES (2012)</span>
+            <p>Exigia <s>"violação indevida de mecanismo de segurança"</s>. Pena: detenção de 3 meses a 1 ano.</p>
+          </div>
+          <div class="arrow">→</div>
+          <div class="diff on"><span class="mono">DEPOIS (2021)</span>
+            <p>Basta a <b>falta de autorização</b> do usuário, mesmo sem senha ou firewall. Pena: <b>reclusão de 1 a 4
+                anos</b> e multa.</p>
+          </div>
+        </div>
+        <aside class="notes">Ponto crucial: a Lei 14.155/2021 retirou a exigência de quebra de mecanismo de segurança. O
+          foco agora é a ausência de autorização do usuário.</aside>
+      </section>
+
+      <!-- ============ 12 INVASÃO — QUALIFICADORAS ============ -->
+      <section class="slide" data-sec="03" data-title="ART_154-A.MODS">
+        <div class="g2" style="grid-template-columns:1.1fr 0.9fr;gap:60px">
+          <div>
+            <div class="kicker">03 // FIGURAS EQUIPARADAS, QUALIFICADORAS E AUMENTOS</div>
+            <h2 class="h-l">QUANDO A PENA SOBE</h2>
+            <table class="tbl" style="margin-top:24px">
+              <tr>
+                <th>Dispositivo</th>
+                <th>Hipótese</th>
+                <th>Consequência</th>
+              </tr>
+              <tr>
+                <td>§1º</td>
+                <td>Produzir, vender ou difundir programa <b>com o intuito</b> de permitir a invasão</td>
+                <td>Mesma pena do caput (1 a 4 anos)</td>
+              </tr>
+              <tr>
+                <td>§2º</td>
+                <td>A invasão resulta em prejuízo econômico para a vítima</td>
+                <td>Pena aumentada de 1/3 a 2/3</td>
+              </tr>
+              <tr>
+                <td>§3º</td>
+                <td>Obtém comunicações privadas, segredos comerciais ou <b>controle remoto</b> não autorizado</td>
+                <td><b>Reclusão de 2 a 5 anos</b> e multa</td>
+              </tr>
+              <tr>
+                <td>§4º</td>
+                <td>Na hipótese do §3º, comercializa ou transmite os dados a terceiros</td>
+                <td>Pena aumentada de 1/3 a 2/3</td>
+              </tr>
+              <tr>
+                <td>§5º</td>
+                <td>Praticado contra Presidente da República, governadores, prefeitos, chefes de Poder</td>
+                <td>Pena aumentada de 1/3 à metade</td>
+              </tr>
+              <tr>
+                <td>Art. 154-B</td>
+                <td>Ação penal</td>
+                <td>Condicionada à <b>representação</b>, salvo contra a Administração Pública ou concessionárias</td>
+              </tr>
+            </table>
+          </div>
+          <div class="stack">
+            <div class="panel line-violet">
+              <div class="tag-mono violet">ART. 266, §1º CP</div>
+              <h4>Interrupção telemática</h4>
+              <p>Interromper ou perturbar serviço telegráfico, telefônico, informático ou telemático de utilidade
+                pública (ex.: ataque DDoS massivo): detenção de 1 a 3 anos e multa.</p>
+            </div>
+            <div class="panel line-violet">
+              <div class="tag-mono violet">ART. 298, PAR. ÚN.</div>
+              <h4>Cartão = documento</h4>
+              <p>A falsificação de cartão de crédito ou débito equipara-se à falsificação de documento particular.</p>
+            </div>
+            <div class="panel line-lime">
+              <div class="tag-mono lime">CASOS EM TI</div>
+              <p>Stalkerware em celular · uso de credencial após desligamento · pentest fora do escopo contratado ·
+                alteração remota de controladores IoT.</p>
+            </div>
+          </div>
+        </div>
+        <aside class="notes">Destacar a figura do controle remoto não autorizado (§3º), elemento-chave no caso dos
+          freezers na Europa e no notebook da Binance.</aside>
+      </section>
+
+      <!-- ============ 13 FRAUDES ============ -->
+      <section class="slide" data-sec="04" data-title="FRAUD_ENGINE">
+        <div class="kicker">04 // FRAUDES ELETRÔNICAS (LEI 14.155/2021)</div>
+        <h2 class="h-l">ESTELIONATO <span class="outline">×</span> FURTO MEDIANTE FRAUDE</h2>
+        <div class="g2" style="margin-top:30px;gap:40px">
+          <div class="vs lime">
+            <div class="tag-mono">ART. 171, §2º-A — FRAUDE ELETRÔNICA</div>
+            <p class="big-p">A <b>vítima é induzida a erro e entrega</b> valores ou dados.</p>
+            <p>Praticada com dados fornecidos pela vítima ou terceiro ludibriado por contatos telefônicos, redes
+              sociais, e-mail falso ou qualquer meio fraudulento análogo.</p>
+            <p class="mono">Ex.: falsa central de segurança bancária, phishing, clonagem de WhatsApp, golpe do boleto
+              falso.</p>
+            <div class="pena">RECLUSÃO 4–8 ANOS + MULTA</div>
+          </div>
+          <div class="vs violet">
+            <div class="tag-mono">ART. 155, §4º-B — FURTO ELETRÔNICO</div>
+            <p class="big-p">O criminoso <b>subtrai diretamente</b> o valor sem consentimento.</p>
+            <p>Cometido mediante fraude por meio de dispositivo eletrônico ou informático, conectado ou não à rede, com
+              ou sem quebra de segurança ou uso de programa malicioso.</p>
+            <p class="mono">Ex.: malware bancário (trojan), transferências manipulando o backend, desvios operados por
+              credencial roubada.</p>
+            <div class="pena">RECLUSÃO 4–8 ANOS + MULTA</div>
+          </div>
+        </div>
+        <div class="g3" style="margin-top:26px;gap:24px">
+          <div class="mini"><b>Majorantes (171 §2º-B e 155 §4º-C, I):</b> pena aumentada de 1/3 a 2/3 se o crime for
+            cometido com uso de servidor localizado fora do território nacional.</div>
+          <div class="mini"><b>Fraude com Criptoativos (art. 171-A):</b> organizar ou gerir fraude com ativos virtuais,
+            reclusão de 4 a 8 anos. Competência: domicílio da vítima (CPP art. 70, §4º).</div>
+          <div class="mini"><b>Ação penal no estelionato (art. 171, §5º):</b> em regra condicionada à representação,
+            salvo vítima maior de 70 anos, vulnerável ou Administração Pública.</div>
+        </div>
+        <aside class="notes">A distinção é essencial: no estelionato a vítima entrega o valor ludibriada; no furto
+          eletrônico o agente subtrai o saldo clandestinamente pelo sistema.</aside>
+      </section>
+
+      <!-- ============ 14 VAZAMENTO ============ -->
+      <section class="slide cream" data-sec="05" data-title="DATA_LEAK">
+        <div class="kicker ink">05 // VAZAMENTO INDEVIDO DE INFORMAÇÕES</div>
+        <h2 class="h-l">UM VAZAMENTO, TRÊS ESFERAS</h2>
+        <div class="g3" style="margin-top:34px">
+          <div class="card-dark">
+            <div class="tag-mono lime">// PENAL (CP e leis esparsas)</div>
+            <ul class="clean">
+              <li><b>154-A §§3º–4º</b>: obter e comercializar ou repassar dados oriundos de invasão</li>
+              <li><b>154</b>: violação de segredo profissional (detenção de 3 meses a 1 ano)</li>
+              <li><b>153 §1º-A</b>: divulgação de segredo ou documento confidencial da Administração</li>
+              <li><b>325 §1º, I</b>: funcionário público que <b>cede credenciais</b> de acesso a pessoa não autorizada
+              </li>
+              <li><b>Lei 9.279/96, art. 195, XI</b>: divulgação de segredo de indústria/negócio da empresa</li>
+            </ul>
+          </div>
+          <div class="card-dark">
+            <div class="tag-mono lime">// ADMINISTRATIVA (LGPD)</div>
+            <ul class="clean">
+              <li><b>Art. 46</b>: dever legal de implementar medidas técnicas de segurança da informação</li>
+              <li><b>Art. 48</b>: dever de notificar a ANPD e os titulares em caso de incidente relevante</li>
+              <li><b>Art. 52</b>: sanções administrativas aplicadas pela ANPD (advertência, multas de até 2% do
+                faturamento limitadas a R$ 50 mi por infração, bloqueio dos dados)</li>
+              <li>A LGPD <b>não possui tipos penais</b>.</li>
+            </ul>
+          </div>
+          <div class="card-dark">
+            <div class="tag-mono lime">// CIVIL e TRABALHISTA</div>
+            <ul class="clean">
+              <li><b>LGPD art. 42</b> e <b>CC arts. 186/927</b>: responsabilidade civil objetiva/subjetiva e dever de
+                indenizar danos patrimoniais e morais</li>
+              <li><b>CDC</b>: responsabilidade objetiva das empresas perante os consumidores</li>
+              <li><b>CLT art. 482, "g"</b>: violação de segredo da empresa fundamenta demissão por <b>justa causa</b>
+              </li>
+              <li>Princípio da <b>independência das instâncias</b>: uma mesma conduta gera reflexos em todas as esferas.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <aside class="notes">Lembrar que a LGPD não comina crimes, mas os vazamentos ativam simultaneamente a esfera
+          penal (art. 154-A ou 154) e a administrativa.</aside>
+      </section>
+
+      <!-- ============ 15 PROVA DIGITAL ============ -->
+      <section class="slide" data-sec="06" data-title="FORENSICS">
+        <div class="g2" style="grid-template-columns:1fr 1fr;gap:60px">
+          <div>
+            <div class="kicker">06 // PROVA DIGITAL E INVESTIGAÇÃO</div>
+            <h2 class="h-l">SEM PROVA,<br><span class="hl-lime">SEM PUNIÇÃO</span></h2>
+            <div class="stack" style="margin-top:28px">
+              <div class="panel line-lime">
+                <div class="tag-mono lime">MARCO CIVIL, ARTS. 13 e 15</div>
+                <p>O provedor de conexão deve guardar registros de conexão por <b>1 ano</b>. O provedor de aplicação
+                  deve guardar registros de acesso a aplicações por <b>6 meses</b>. A disponibilização depende de prévia
+                  ordem judicial (art. 22).</p>
+              </div>
+              <div class="panel line-lime">
+                <div class="tag-mono lime">CPP, ARTS. 158-A a 158-F</div>
+                <p><b>Cadeia de custódia</b>: procedimentos de coleta, lacre, cálculo de hash criptográfico e registro
+                  documental. A quebra injustificada da cadeia pode acarretar a anulação da prova pericial.</p>
+              </div>
+              <div class="panel line-violet">
+                <div class="tag-mono violet">CONVENÇÃO DE BUDAPESTE</div>
+                <p>Instrumento internacional para preservação imediata de dados digitais transfronteiriços e assistência
+                  mútua na obtenção de evidências eletrônicas.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="tag-mono lime" style="margin:20px 0 16px">// RECOMENDAÇÕES DA POLÍCIA E DA FORENSE</div>
+            <ol class="check">
+              <li>Captura de telas preservando URL completa, metadados, data e hora da ocorrência</li>
+              <li><b>Ata notarial</b> lavrada em cartório ou plataforma com certificação de integridade (hash)</li>
+              <li>Preservação de arquivos brutos de log e imagens forenses sem inicializar a máquina afetada</li>
+              <li>Guarda de comprovantes de transações PIX e solicitação imediata do Mecanismo Especial de Devolução
+                (MED)</li>
+              <li>Registro formal de Boletim de Ocorrência em delegacia especializada em repressão a cibercrimes</li>
+              <li>Para organizações: acionamento imediato do Comitê de Resposta a Incidentes e avaliação de comunicação
+                à ANPD</li>
+            </ol>
+          </div>
+        </div>
+        <aside class="notes">Como a prova digital é volátil, ela exige cuidados periciais rigorosos. Em seguida, o Vídeo
+          03 ilustra a rotina das delegacias e perícia.</aside>
+      </section>
+
+      <!-- ============ 16 VÍDEO 03 (SOLO) ============ -->
+      <section class="slide v-solo" data-sec="06" data-title="VIDEO_03">
+        <div class="kicker">06.1 // VÍDEO 03 · TV GUAPOREÍ / REDE RECORD (7:19)</div>
+        <h2 class="h-m">RISCO DE CRIMES VIRTUAIS: QUAIS OS CRIMES CIBERNÉTICOS MAIS COMUNS NO BRASIL</h2>
+        <div class="solo-frame">
+          <iframe data-id="_ccU9AvMBsw" title="V03"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="solo-ctx">
+          <div class="tag-mono lime">// CONTEXTO</div>
+          <p>Reportagem sobre o aumento de registros de crimes virtuais durante a pandemia, destacando crimes contra a
+            honra, vazamentos e extorsões, e as orientações das autoridades policiais para que as vítimas preservem as
+            provas digitais (como prints e atas notariais).</p>
+        </div>
+        <aside class="notes">Vídeo 03: reportagem prática sobre os crimes de maior incidência e orientações policiais
+          para prova digital.</aside>
+      </section>
+
+      <!-- ============ 17 RESPONSABILIDADE DO PROFISSIONAL DE TI ============ -->
+      <section class="slide" data-sec="07" data-title="SYSADMIN.LIABILITY">
+        <div class="pixel-v violet" style="right:60px;top:130px">ROOT</div>
+        <div class="kicker">07 // RESPONSABILIDADE PENAL DO PROFISSIONAL DE TI</div>
+        <h2 class="h-l">QUEM TEM ROOT<br>TEM <span class="hl-violet">DEVER</span></h2>
+        <div class="g4" style="margin-top:34px;max-width:1600px">
+          <div class="panel">
+            <div class="num">A</div>
+            <h4>Autor</h4>
+            <p>Executa pessoalmente o núcleo da conduta criminosa: o administrador que subtrai a base de clientes da
+              empresa para comercializá-la (arts. 154-A e 155 §4º-B).</p>
+          </div>
+          <div class="panel">
+            <div class="num">B</div>
+            <h4>Coautor / partícipe</h4>
+            <p>Art. 29 do CP: presta auxílio material deliberado — vende credenciais de acesso, abre portas de firewall
+              ou insere rotinas a mando de quadrilhas.</p>
+          </div>
+          <div class="panel">
+            <div class="num">C</div>
+            <h4>Garantidor omisso</h4>
+            <p>Art. 13, §2º do CP: responsável pela segurança que, tendo ciência inequívoca do ataque e o dever
+              contratual/legal de impedir, omite-se com dolo para beneficiar o infrator.</p>
+          </div>
+          <div class="panel">
+            <div class="num">D</div>
+            <h4>Desenvolvedor</h4>
+            <p>Art. 154-A, §1º: desenvolve ou distribui software malicioso <b>com o fim explícito</b> de viabilizar
+              invasões. Ferramentas legítimas de segurança e pentest não configuram delito.</p>
+          </div>
+        </div>
+        <div class="row" style="margin-top:30px;gap:24px;max-width:1600px">
+          <div class="mini" style="flex:1"><b>Não isentam de culpa:</b> "ordem de chefe privado" (art. 22 do CP só
+            ampara hierarquia pública legítima) · "desconhecimento da lei" (art. 21) · "eu só passei a minha senha".
+          </div>
+          <div class="mini" style="flex:1"><b>Salvaguardas de conformidade:</b> escopos de teste formalizados por
+            escrito · logs auditáveis e imutáveis · menor privilégio (PAM) · canais internos de denúncia ética · Código
+            de Ética da SBC/ACM.</div>
+        </div>
+        <aside class="notes">O profissional de TI possui conhecimentos e acessos que potencializam o dano, atraindo
+          maior reprovabilidade penal.</aside>
+      </section>
+
+      <!-- ============ 18 DIVISOR NOTÍCIAS ============ -->
+      <section class="slide lime-bg" data-sec="08" data-title="RADAR_2026">
+        <div class="kicker ink">08 // NOTÍCIAS ATUAIS · OUTUBRO–NOVEMBRO DE 2026</div>
+        <h1 class="h-xxl" style="color:#0b0b0c;margin-top:60px">RADAR</h1>
+        <h1 class="h-xxl outline-ink">2026</h1>
+        <div class="row" style="margin-top:50px;gap:30px">
+          <div class="sticker dark">◎ 29/10/2026 · BINANCE: US$ 6,3 BILHÕES</div>
+          <div class="sticker dark">◎ OUT–NOV/2026 · SABOTAGEM DE FREEZERS NA EUROPA</div>
+        </div>
+        <div class="pixel-v" style="right:80px;top:140px;color:#0b0b0c;opacity:.85">ALERTA</div>
+        <aside class="notes">Transição para os casos práticos recentes. Iniciamos com a reflexão geopolítica do Vídeo
+          04.</aside>
+      </section>
+
+      <!-- ============ 19 VÍDEO 04 (SOLO) ============ -->
+      <section class="slide v-solo" data-sec="08" data-title="VIDEO_04">
+        <div class="kicker">08.1 // VÍDEO 04 · MORNING SHOW / JOVEM PAN (10:43)</div>
+        <h2 class="h-m">ATAQUES CIBERNÉTICOS E GUERRA HÍBRIDA COLOCAM O OCIDENTE EM ALERTA</h2>
+        <div class="solo-frame">
+          <iframe data-id="nvXFwfIFjJY" title="V04"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="solo-ctx">
+          <div class="tag-mono lime">// CONTEXTO</div>
+          <p>O especialista em geopolítica Luiz Antonio Valle adverte que confrontos modernos entre potências ocorrem
+            por meio de sanções econômicas, manipulação psicossocial e ofensivas cibernéticas contra infraestruturas
+            críticas, com destaque para redes de abastecimento alimentar e sistemas financeiros.</p>
+        </div>
+        <aside class="notes">Vídeo 04: contextualização de guerra híbrida e ataques a infraestruturas essenciais
+          (alimentos e finanças).</aside>
+      </section>
+
+      <!-- ============ 20 NOTÍCIA 1: BINANCE ============ -->
+      <section class="slide" id="binance" data-sec="08" data-title="NEWS//BINANCE"
+        style="padding-top:100px;padding-bottom:90px">
+        <div class="news-img img-frame"><img src="assets/crypto.jpg" alt=""></div>
+        <div style="width:1120px">
+          <div class="kicker">08.2 // NOTÍCIA INTERNACIONAL · 29/10/2026</div>
+          <h2 class="h-l" style="font-size:92px">BINANCE: <span class="hl-lime">US$ 6,3 BI</span><br>EM UM SÓ ATAQUE
+          </h2>
+          <div class="g2" style="margin-top:20px;gap:24px">
+            <div class="panel" style="padding:18px 22px">
+              <div class="tag-mono lime">// O QUE ACONTECEU</div>
+              <ul class="clean" style="font-size:20px">
+                <li>Maior roubo de ativos digitais já documentado no setor de criptomoedas</li>
+                <li>Vetor de entrada: o <b>computador corporativo de um engenheiro</b> foi comprometido remotamente,
+                  concedendo acesso privilegiado aos sistemas de liquidação e saque</li>
+                <li>Saques suspensos preventivamente; emissores como Tether e Circle congelaram parte dos fundos
+                  dispersados</li>
+                <li>Perícias atribuem o ataque ao grupo <b>TraderTraitor / Lazarus</b>, estatal da Coreia do Norte</li>
+                <li>A corretora declarou que ressarcirá os usuários afetados com recursos próprios</li>
+              </ul>
+            </div>
+            <div class="panel line-lime" style="padding:18px 22px">
+              <div class="tag-mono lime">// LEITURA JURÍDICA (DIREITO BRASILEIRO)</div>
+              <ul class="clean" style="font-size:20px">
+                <li><b>154-A §3º</b>: invasão qualificada de dispositivo com controle remoto não autorizado</li>
+                <li><b>155 §4º-B e §4º-C, I</b>: furto eletrônico com uso de infraestrutura no exterior</li>
+                <li><b>Lei 9.613/98</b>: lavagem de ativos pela dispersão em múltiplas carteiras e mixers</li>
+                <li><b>Lei 12.850/13</b>: integração de organização criminosa cibernética transnacional</li>
+                <li><b>Art. 7º do CP</b> e Convenção de Budapeste: extraterritorialidade e cooperação judicial
+                  internacional</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mini" style="margin-top:16px;font-size:19px;padding:12px 18px"><b>Lição para SI:</b> a
+            vulnerabilidade residiu no <b>endpoint do profissional com credenciais privilegiadas</b>. Salvaguardas:
+            segregação criptográfica de chaves (HSM/Multisig), EDR com Zero Trust, tokens FIDO2 resistentes a phishing e
+            limites de saque automatizados com verificação humana.</div>
+          <div class="row" style="margin-top:14px;gap:18px;align-items:center"><span class="src"
+              style="font-size:16px">Fontes: BBC News Brasil, 30/10/2026; Al Jazeera, 30/10/2026; Bloomberg,
+              29/10/2026.</span></div>
+        </div>
+        <aside class="notes">Destacar a conexão: assim como no caso Binance, o vetor principal de invasões de alto
+          impacto quase sempre envolve a credencial de um profissional técnico.</aside>
+      </section>
+
+      <!-- ============ 21 NOTÍCIA 2: FREEZERS ============ -->
+      <section class="slide" id="freezers" data-sec="08" data-title="NEWS//COLD_CHAIN"
+        style="padding-top:100px;padding-bottom:90px">
+        <div class="news-img img-frame left"><img src="assets/freezer.jpg" alt=""></div>
+        <div style="margin-left:auto;width:1120px">
+          <div class="kicker">08.3 // NOTÍCIA INTERNACIONAL · OUTUBRO–NOVEMBRO DE 2026</div>
+          <h2 class="h-l" style="font-size:92px">FREEZERS A <span class="hl-violet">50 °C</span><br>NOS SUPERMERCADOS
+          </h2>
+          <div class="g2" style="margin-top:20px;gap:24px">
+            <div class="panel" style="padding:18px 22px">
+              <div class="tag-mono violet">// O QUE ACONTECEU</div>
+              <ul class="clean" style="font-size:20px">
+                <li><b>Outubro/2026 (França):</b> invasores acessam remotamente controladores térmicos de centenas de
+                  supermercados (Carrefour, Monoprix), elevam a temperatura para 50 °C e causam perdas de alimentos e
+                  focos de incêndio</li>
+                <li><b>02/11/2026:</b> nova onda coordenada atinge redes na Bélgica (Delhaize, IKEA), Luxemburgo, Suécia
+                  (ICA), Estônia e Irlanda</li>
+                <li>Evaporadores foram acionados remotamente no <b>modo contínuo de degelo</b> via integrador de
+                  telemetria (Sabcobel)</li>
+                <li>Agências de cibersegurança europeias investigam hipótese de <b>sabotagem híbrida</b> contra a cadeia
+                  de alimentos</li>
+              </ul>
+            </div>
+            <div class="panel line-violet" style="padding:18px 22px">
+              <div class="tag-mono violet">// LEITURA JURÍDICA (DIREITO BRASILEIRO)</div>
+              <ul class="clean" style="font-size:20px">
+                <li><b>154-A §3º</b>: o controlador IoT industrial é dispositivo informático; a tomada de controle
+                  remoto qualifica a invasão</li>
+                <li><b>163, parágrafo único, IV</b>: dano patrimonial qualificado por motivo egoístico ou com
+                  considerável prejuízo para a vítima</li>
+                <li><b>250 do CP</b>: crime de incêndio decorrente de sobrecarga térmica (dolo eventual)</li>
+                <li><b>Lei 13.260/16 (Terrorismo)</b>: prevê sabotagem mediante mecanismos cibernéticos, mas restrita a
+                  certas finalidades e alvos essenciais, gerando debate doutrinário</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mini" style="margin-top:16px;font-size:19px;padding:12px 18px"><b>Lição para SI:</b>
+            vulnerabilidade generalizada em dispositivos OT/IoT industriais com interfaces web expostas à internet,
+            senhas fracas de fábrica e túneis de suporte remoto sem MFA. A responsabilidade do <b>integrador de TI</b> é
+            civil e administrativa.</div>
+          <div class="row" style="margin-top:14px;gap:18px;align-items:center"><span class="src"
+              style="font-size:16px">Fontes: G1, 12/10/2026 e 02/11/2026; DW Brasil, 02/11/2026; Jornal Nacional,
+              13/10/2026.</span></div>
+        </div>
+        <aside class="notes">O ciberataque moderno atinge a infraestrutura física e afeta diretamente a sociedade
+          (abastecimento e segurança alimentar).</aside>
+      </section>
+
+      <!-- ============ 22 ESTUDO DE CASO — SITUAÇÃO ============ -->
+      <section class="slide" data-sec="09" data-title="CASE_FILE//C&M">
+        <div class="pixel-v lime" style="right:60px;top:130px">CASE</div>
+        <div class="g2" style="grid-template-columns:1.15fr 0.85fr;gap:50px">
+          <div>
+            <div class="kicker">09 // ESTUDO DE CASO REAL · JULHO DE 2025</div>
+            <h2 class="h-l">C&amp;M SOFTWARE:<br>O <span class="hl-lime">INSIDER</span> DO PIX</h2>
+            <p style="margin-top:20px">A <b>C&amp;M Software</b> é uma empresa de tecnologia que desenvolve a
+              infraestrutura de mensageria que conecta fintechs e bancos médios ao Banco Central (SPI / PIX). Em julho
+              de 2025, o sistema foi utilizado para desviar fundos das <b>contas reserva</b> de clientes como a
+              instituição BMP e Banco Master.</p>
+            <div class="timeline compact" style="margin-top:24px">
+              <div><b>A COOPTAÇÃO</b><span>O profissional de TI João Nazareno Roque (48 anos, pós-graduado na área de
+                  computação) é abordado por uma quadrilha ao sair de um bar. O contato transcorre por celular.</span>
+              </div>
+              <div><b>A VENDA</b><span>Roque vende seu login e senha com permissões de administrador por <b>R$ 5
+                    mil</b>. Posteriormente, opera comandos no terminal de trabalho a pedido do grupo, totalizando <b>R$
+                    15 mil</b> recebidos.</span></div>
+              <div><b>O ATAQUE</b><span>Com o acesso privilegiado, a quadrilha emite transferências fraudulentas
+                  instantâneas. Desvio de <b>ao menos R$ 541 milhões</b>, fracionados em contas de 29 instituições
+                  bancárias.</span></div>
+              <div><b>A RESPOSTA</b><span>A BMP formaliza Boletim de Ocorrência. Operação conjunta da Polícia Civil de
+                  SP, PF e Banco Central localiza e prende Roque em 03/07/2025, que confessa a prática.</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="img-frame tall"><img src="assets/insider.jpg" alt=""></div>
+            <p class="src" style="margin-top:14px">Fontes: Agência Brasil (03/07/2025); Estadão (04/07/2025); Valor
+              Econômico (08/07/2025). Imagem ilustrativa.</p>
+          </div>
+        </div>
+        <aside class="notes">Caso emblemático brasileiro onde o ponto de quebra da segurança não foi um software
+          vulnerável, mas a corrupção do profissional de TI interno.</aside>
+      </section>
+
+      <!-- ============ 23 ESTUDO DE CASO — ANÁLISE ============ -->
+      <section class="slide cream" data-sec="09" data-title="CASE_FILE//ANALYSIS">
+        <div class="kicker ink">09 // ANÁLISE JURÍDICA ESTRUTURADA</div>
+        <h2 class="h-m">FATO → PROBLEMA → CONCEITO → LEI</h2>
+        <table class="tbl light dense" style="margin-top:20px">
+          <tr>
+            <th>Fato do caso</th>
+            <th>Problema jurídico</th>
+            <th>Conceito penal</th>
+            <th>Dispositivo legal</th>
+          </tr>
+          <tr>
+            <td>Ingresso no sistema com credencial vendida de funcionário</td>
+            <td>A credencial era válida, mas o <b>uso era desautorizado pela empresa</b>. Com a Lei 14.155/21,
+              dispensa-se quebra de barreira técnica.</td>
+            <td>Tipicidade e elemento "sem autorização"</td>
+            <td>Art. 154-A, §3º do CP</td>
+          </tr>
+          <tr>
+            <td>Desvio milionário das contas de reserva do PIX</td>
+            <td>Subtração clandestina direta através de comandos; não houve vítima ludibriada a efetuar o pagamento.
+            </td>
+            <td>Furto mediante fraude vs. estelionato</td>
+            <td>Art. 155, §4º-B do CP</td>
+          </tr>
+          <tr>
+            <td>Roque fornece as senhas e opera comandos no terminal</td>
+            <td>O funcionário não planejou o golpe todo sozinho, mas prestou colaboração técnica determinante.</td>
+            <td>Teoria Monista do Concurso de Pessoas</td>
+            <td>Artigo 29 do CP c/c arts. 155 §4º-B e 154-A</td>
+          </tr>
+          <tr>
+            <td>Suborno pago ao profissional de empresa privada</td>
+            <td>Inexistência de tipo penal de "corrupção privada" no Brasil; restrito a agente público no CP.</td>
+            <td>Princípio da Legalidade estrita (proibição de analogia)</td>
+            <td>Art. 1º do CP (não há crime de corrupção passiva do 317)</td>
+          </tr>
+          <tr>
+            <td>Pulverização dos montantes em 29 instituições bancárias</td>
+            <td>Ocultação e dissimulação da origem ilícita dos valores através de estrutura fracionada organizada.</td>
+            <td>Crimes conexos de lavagem e organização</td>
+            <td>Lei nº 9.613/1998 e Lei nº 12.850/2013</td>
+          </tr>
+          <tr>
+            <td>Controles internos insuficientes da fornecedora de TI</td>
+            <td>Credencial individual permitia autorizar desvios milionários sem validação cruzada independente.</td>
+            <td>Responsabilidade civil e dever regulatório de segurança</td>
+            <td>CC art. 927; Res. CMN 4.893/21; Res. BCB 85/21</td>
+          </tr>
+        </table>
+        <aside class="notes">Cada elemento fático é conectado de forma rigorosa ao tipo penal correspondente e às lições
+          de Direito Penal vistas no início.</aside>
+      </section>
+
+      <!-- ============ 24 ESTUDO DE CASO — CONSEQUÊNCIAS / SOLUÇÕES ============ -->
+      <section class="slide" data-sec="09" data-title="CASE_FILE//PATCH">
+        <div class="kicker">09 // CONSEQUÊNCIAS E SOLUÇÕES FUNDAMENTADAS</div>
+        <h2 class="h-l">IMPACTO <span class="outline">&amp;</span> PATCH</h2>
+        <div class="g3" style="margin-top:34px">
+          <div class="panel line-lime">
+            <div class="tag-mono lime">// PROFISSIONAL DE TI</div>
+            <ul class="clean">
+              <li>Responsabilidade penal: concurso material de furto eletrônico qualificado (4 a 8 anos) e invasão
+                qualificada, somados a eventuais imputações de organização criminosa e lavagem de capitais</li>
+              <li>A confissão espontânea opera como atenuante genérica (art. 65, III, "d" do CP), sem afastar o regime
+                prisional fechado</li>
+              <li>Trabalhista: demissão imediata por justa causa (art. 482, "g" da CLT)</li>
+              <li>Civil: responsabilização pessoal para ressarcimento dos prejuízos</li>
+            </ul>
+          </div>
+          <div class="panel line-violet">
+            <div class="tag-mono violet">// EMPRESAS E REGULAÇÃO</div>
+            <ul class="clean">
+              <li>C&amp;M: suspensão preventiva de conectividade imposta pelo Banco Central, perda de credibilidade no
+                mercado e ações regressivas indenizatórias</li>
+              <li>Instituições financeiras: obrigação de recomposição imediata dos saldos afetados perante os clientes
+              </li>
+              <li>Pessoas jurídicas <b>não respondem criminalmente</b> por crimes patrimoniais cibernéticos no Brasil
+                (apenas por crimes ambientais)</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="tag-mono lime">// SOLUÇÕES TÉCNICAS DE SI</div>
+            <ul class="clean">
+              <li><b>Princípio do Menor Privilégio &amp; PAM:</b> controle estrito e temporário de credenciais de
+                administração</li>
+              <li><b>Princípio dos Quatro Olhos (Four-Eyes):</b> exigência mandatória de dupla aprovação segregada para
+                comandos ou transferências críticas</li>
+              <li><b>Zero Trust e FIDO2:</b> autenticação multifator atrelada a hardware seguro e localização validada
+              </li>
+              <li><b>Monitoramento Comportamental (UEBA):</b> detecção de anomalias em volume de transações e horários
+                de comandos atípicos</li>
+              <li><b>Cultura de Prevenção a Insider Threats:</b> canal seguro de denúncia e treinamentos contra
+                engenharia social</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="notes">Apresentar as consequências severas para o indivíduo e as soluções arquiteturais de
+          Sistemas de Informação que teriam prevenido o incidente.</aside>
+      </section>
+
+      <!-- ============ 25 DISCUSSÃO ============ -->
+      <section class="slide violet-bg" data-sec="10" data-title="OPEN_THREAD">
+        <div class="kicker ink">10 // DISCUSSÃO COM A TURMA · CASO C&amp;M SOFTWARE</div>
+        <h2 class="h-l" style="color:#0b0b0c">E VOCÊ, O QUE ACHA?</h2>
+        <div class="stack" style="margin-top:36px;max-width:1650px">
+          <div class="q"><span>Q1</span>
+            <p>João Roque <b>não quebrou firewalls</b>: usou seu próprio acesso legítimo. Ele deve responder como autor
+              da invasão (art. 154-A), como partícipe do furto eletrônico (art. 155 §4º-B c/c art. 29) ou por ambos? O
+              fato de ter recebido apenas R$ 15 mil frente aos R$ 541 milhões desviados atenua a gravidade do seu ato?
+            </p>
+          </div>
+          <div class="q"><span>Q2</span>
+            <p>Por que a conduta do grupo criminoso foi tipificada como <b>furto mediante fraude</b> (art. 155, §4º-B) e
+              não como <b>fraude eletrônica / estelionato</b> (art. 171, §2º-A)? E se a quadrilha tivesse enganado um
+              operador por telefone para que ele mesmo realizasse as transferências?</p>
+          </div>
+          <div class="q"><span>Q3</span>
+            <p>Pagar suborno a um colaborador do setor privado para trair a própria empresa <b>não configura crime
+                autônomo de corrupção</b> no Brasil. Isso é uma lacuna legal? Como futuros profissionais e gestores de
+              TI, quais barreiras técnicas e éticas são indispensáveis contra a cooptação de insiders?</p>
+          </div>
+        </div>
+        <aside class="notes">Moderar o debate abrindo para respostas dos colegas sobre as 3 perguntas.</aside>
+      </section>
+
+      <!-- ============ 26 CONCLUSÃO ============ -->
+      <section class="slide" data-sec="11" data-title="SHUTDOWN -R">
+        <div class="kicker">11 // CONCLUSÕES</div>
+        <h2 class="h-l">5 LINHAS DE <span class="hl-lime">LOG</span></h2>
+        <ol class="logs" style="margin-top:36px">
+          <li><span>[OK]</span> Sem lei anterior taxativa, não há crime penal. O Direito brasileiro modernizou-se com as
+            Leis 12.737/12 e 14.155/21.</li>
+          <li><span>[OK]</span> A invasão de dispositivo (art. 154-A) tipifica-se pela falta de autorização do usuário,
+            sem necessidade de quebra física de barreira.</li>
+          <li><span>[OK]</span> Na fraude eletrônica (171 §2º-A), a vítima entrega; no furto eletrônico (155 §4º-B), o
+            criminoso subtrai pelo sistema.</li>
+          <li><span>[WARN]</span> Vazamentos geram responsabilidade penal, administrativa (LGPD), civil e trabalhista de
+            forma independente.</li>
+          <li><span>[CRIT]</span> O elo mais crítico da segurança da informação continua sendo o fator humano.
+            Conhecimento técnico exige compromisso ético irrestrito.</li>
+        </ol>
+        <aside class="notes">Síntese final dos tópicos principais do seminário.</aside>
+      </section>
+
+      <!-- ============ 27 REFERÊNCIAS ============ -->
+      <section class="slide cream" data-sec="12" data-title="SOURCES.TXT">
+        <div class="kicker ink">12 // REFERÊNCIAS E MATERIAIS</div>
+        <div class="g3 refs" style="margin-top:20px;gap:36px">
+          <div>
+            <h4>Legislação</h4>
+            <ul>
+              <li>BRASIL. Constituição da República Federativa do Brasil de 1988, art. 5º, XXXIX e XL.</li>
+              <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm"
+                  target="_blank">Código Penal (Decreto-Lei nº 2.848/1940)</a>.</li>
+              <li>BRASIL. Código de Processo Penal (Decreto-Lei nº 3.689/1941), arts. 70 §4º e 158-A a 158-F.</li>
+              <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12737.htm"
+                  target="_blank">Lei nº 12.737/2012 (Lei Carolina Dieckmann)</a>.</li>
+              <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm"
+                  target="_blank">Lei nº 12.965/2014 (Marco Civil da Internet)</a>.</li>
+              <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+                  target="_blank">Lei nº 13.709/2018 (LGPD)</a>.</li>
+              <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14155.htm"
+                  target="_blank">Lei nº 14.155/2021 (Fraude Eletrônica e Invasão)</a>.</li>
+              <li>BRASIL. Leis 7.716/89, 8.069/90 (ECA), 9.279/96, 9.613/98, 12.850/13, 13.260/16, 14.478/22 e
+                14.811/24.</li>
+              <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11491.htm"
+                  target="_blank">Decreto nº 11.491/2023 (Convenção de Budapeste)</a>.</li>
+              <li>BANCO CENTRAL DO BRASIL. Resolução CMN nº 4.893/2020 e Resolução BCB nº 85/2021.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Notícias Consultadas</h4>
+            <ul>
+              <li>BBC News Brasil. <a href="https://www.bbc.com/portuguese/articles/c820v2x0zvqko"
+                  target="_blank">Binance sofre ataque hacker de US$ 6,3 bilhões…</a> 30 out. 2026.</li>
+              <li>Al Jazeera. <a
+                  href="https://www.aljazeera.com/economy/2026/10/30/binance-says-2-54bn-in-crypto-funds-frozen-amid-potential-security-issue"
+                  target="_blank">Binance says $6.3bn stolen in biggest crypto heist…</a> 30 out. 2026.</li>
+              <li>G1. <a
+                  href="https://g1.globo.com/tecnologia/ciberseguranca/noticia/2026/10/12/hackers-invadem-geladeiras-de-supermercados-na-franca-elevam-temperatura-a-50c-e-provocam-incendios.ghtml"
+                  target="_blank">Hackers invadem geladeiras de supermercados na França…</a> 12 out. 2026.</li>
+              <li>G1. <a
+                  href="https://g1.globo.com/tecnologia/ciberseguranca/noticia/2026/11/02/hackers-atacam-supermercados-europeus-e-elevam-temperatura-de-freezers-a-50c.ghtml"
+                  target="_blank">Hackers atacam supermercados europeus e elevam freezers a 50°C</a>. 02 nov. 2026.</li>
+              <li>DW Brasil. <a
+                  href="https://www.dw.com/pt-br/o-que-se-sabe-sobre-nova-onda-de-ataques-hacker-a-supermercados-na-europa/a-79833140"
+                  target="_blank">A nova onda de ataques hacker a supermercados na Europa</a>. 02 nov. 2026.</li>
+              <li>Agência Brasil. <a
+                  href="https://agenciabrasil.ebc.com.br/geral/noticia/2025-07/funcionario-que-deu-acesso-hackers-executarem-fraude-e-preso"
+                  target="_blank">Funcionário que deu acesso a hackers… é preso</a>. 03 jul. 2025.</li>
+              <li>Estadão. <a
+                  href="https://www.estadao.com.br/politica/blog-do-fausto-macedo/funcionario-ti-depoimento-policia-login-senha-ataque-hacker/"
+                  target="_blank">Funcionário de TI diz à Polícia que recebeu R$ 15 mil…</a> 04 jul. 2025.</li>
+              <li>Valor Econômico. <a
+                  href="https://valor.globo.com/financas/noticia/2025/07/08/o-que-se-sabe-at-agora-sobre-o-maior-crime-financeiro-da-histria-do-brasil.ghtml"
+                  target="_blank">O que se sabe até agora sobre o maior crime financeiro…</a> 08 jul. 2025.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Vídeos Utilizados</h4>
+            <ul>
+              <li>V01 · JOVEM PAN NEWS. <a href="https://www.youtube.com/watch?v=UqOcX1VHTos" target="_blank">O que são
+                  crimes cibernéticos e por que eles crescem tanto?</a> Entrevistado: José Milagre. Fev. 2026.</li>
+              <li>V02 · SBT NEWS. <a href="https://www.youtube.com/watch?v=lo9oHmivXQw" target="_blank">IA dificulta
+                  combate a crimes cibernéticos e coloca crianças em risco</a>. SBT Brasil, Ago. 2025.</li>
+              <li>V03 · TV GUAPOREÍ. <a href="https://www.youtube.com/watch?v=_ccU9AvMBsw" target="_blank">Risco de
+                  crimes virtuais: quais os crimes cibernéticos mais comuns no Brasil</a>. Abr. 2021.</li>
+              <li>V04 · JOVEM PAN / MORNING SHOW. <a href="https://www.youtube.com/watch?v=nvXFwfIFjJY"
+                  target="_blank">Ataques cibernéticos e guerra híbrida colocam o Ocidente em alerta</a>. Nov. 2026.
+              </li>
+            </ul>
+            <h4 style="margin-top:22px">Fontes e Imagens</h4>
+            <ul>
+              <li>Tipografia: Google Fonts (Anton, Space Grotesk, JetBrains Mono, Silkscreen). Fotografias conceituais
+                geradas para o trabalho acadêmico.</li>
+            </ul>
+            <p class="src" style="margin-top:14px">Acesso a todos os links em: 07/11/2026.</p>
+          </div>
+        </div>
+        <aside class="notes">Todos os materiais, links e normas citadas estão catalogados.</aside>
+      </section>
+
+      <!-- ============ 28 FIM ============ -->
+      <section class="slide" data-sec="EOF" data-title="END_OF_TRANSMISSION">
+        <div style="position:absolute;left:120px;top:200px">
+          <div class="kicker">EOF // OBRIGADO</div>
+          <h1 class="h-xxl glitch" data-text="LOGOUT">LOGOUT</h1>
+          <p class="mono dim" style="font-size:30px;margin-top:20px">&gt; perguntas_<span class="blink">█</span></p>
+        </div>
+        <svg class="globe" style="right:200px;top:220px;width:560px;height:560px" viewBox="-110 -110 220 220">
+          <g fill="none" stroke="currentColor" stroke-width=".7">
+            <circle r="100" />
+            <ellipse rx="100" ry="30" />
+            <ellipse rx="100" ry="65" />
+            <line x1="-100" x2="100" />
+            <ellipse ry="100" rx="20">
+              <animate attributeName="rx" values="0;100;0" dur="8s" repeatCount="indefinite" />
+            </ellipse>
+            <ellipse ry="100" rx="60">
+              <animate attributeName="rx" values="60;100;0;60" dur="8s" repeatCount="indefinite" />
+            </ellipse>
+            <ellipse ry="100" rx="90">
+              <animate attributeName="rx" values="90;0;100;90" dur="8s" repeatCount="indefinite" />
+            </ellipse>
+          </g>
+        </svg>
+        <div class="sticker lime" style="right:260px;bottom:170px">the law is code ↗</div>
+        <aside class="notes">Agradecer à professora Ana Clara e à turma, e abrir para a discussão e perguntas.</aside>
+      </section>
+
     </div>
   </div>
-  <div class="sticker violet" style="left:120px;bottom:150px">Integrantes: Eduardo Augusto, José Marcos e Marcos Vinícius<br>Prof.: Ana Clara · 09/11/2026</div>
-  <aside class="notes">Apresentar o grupo e o tema. Avisar a ordem: conceitos jurídicos, legislação, vídeos integrados, notícias, estudo de caso real e discussão.</aside>
-</section>
 
-<!-- ============ 02 SUMÁRIO ============ -->
-<section class="slide cream" data-sec="01" data-title="INDEX.SYS">
-  <div class="g2" style="grid-template-columns:0.9fr 1.1fr;height:100%;align-items:center">
-    <div>
-      <div class="kicker ink">ROTEIRO // O QUE VAMOS VER</div>
-      <h2 class="h-xl">MAPA DA<br>MISSÃO</h2>
-      <div class="block-lime" style="margin-top:40px">
-        <div class="mono" style="font-size:22px">// objetivo</div>
-        <p style="font-size:30px;margin-top:8px">Entender <b>quando</b> uma conduta na rede vira crime, <b>qual</b> lei se aplica e <b>como</b> isso atinge o profissional de TI.</p>
-      </div>
-    </div>
-    <ol class="index">
-      <li><span>01_</span> Noções de Direito Penal</li>
-      <li><span>02_</span> Crimes cibernéticos, marcos legais e vídeos</li>
-      <li><span>03_</span> Invasão de dispositivo informático</li>
-      <li><span>04_</span> Fraudes eletrônicas</li>
-      <li><span>05_</span> Vazamento indevido de informações</li>
-      <li><span>06_</span> Prova digital</li>
-      <li><span>07_</span> Responsabilidade do profissional de TI</li>
-      <li><span>08_</span> Notícias: Binance × freezers na Europa</li>
-      <li><span>09_</span> Estudo de caso real: C&amp;M Software / PIX</li>
-      <li><span>10_</span> Discussão com a turma</li>
-    </ol>
-  </div>
-  <aside class="notes">Explicar o fio condutor: cada conceito é ilustrado com vídeos, notícias recentes e um estudo de caso prático.</aside>
-</section>
-
-<!-- ============ 03 CONTEXTO ============ -->
-<section class="slide" data-sec="01" data-title="CONTEXTO">
-  <div class="pixel-v violet" style="left:40px;top:140px">ONLINE</div>
-  <div style="padding-left:80px">
-    <div class="kicker">CONTEXTO // POR QUE ESSE TEMA IMPORTA</div>
-    <h2 class="h-xl">O CRIME <span class="hl-lime">MIGROU</span><br>DA RUA PARA A REDE</h2>
-    <div class="g3" style="margin-top:50px">
-      <div class="panel">
-        <div class="num">01</div>
-        <h4>Escala</h4>
-        <p>A popularização da internet, do PIX e do celular aumentou o número de vítimas e reduziu o custo do crime. O mesmo golpe atinge milhares de pessoas instantaneamente.</p>
-      </div>
-      <div class="panel">
-        <div class="num">02</div>
-        <h4>Anonimato e fronteiras</h4>
-        <p>VPN, deep/dark web, criptoativos e servidores no exterior dificultam a identificação da autoria e exigem cooperação jurídica internacional.</p>
-      </div>
-      <div class="panel">
-        <div class="num">03</div>
-        <h4>Novas ferramentas</h4>
-        <p>IA generativa cria deepfakes e golpes altamente realistas. Dispositivos IoT industriais e domésticos tornam-se vetores de invasão e sabotagem.</p>
-      </div>
-    </div>
-  </div>
-  <aside class="notes">O crime tradicional migrou em massa para os meios digitais pela escala, baixo custo e sensação de anonimato.</aside>
-</section>
-
-<!-- ============ 04 DIREITO PENAL: PRINCÍPIOS ============ -->
-<section class="slide" data-sec="01" data-title="DIREITO_PENAL.BASE">
-  <div class="g2" style="grid-template-columns:1fr 1fr;gap:70px">
-    <div>
-      <div class="kicker">01 // NOÇÕES DE DIREITO PENAL</div>
-      <h2 class="h-xl">SEM LEI,<br><span class="outline">SEM CRIME</span></h2>
-      <div class="law" style="margin-top:36px">
-        <div class="law-tag">ART. 5º, XXXIX, CF · ART. 1º, CP</div>
-        "Não há crime sem lei anterior que o defina, nem pena sem prévia cominação legal."
-      </div>
-      <p class="dim" style="margin-top:24px">O Direito Penal é a <b>ultima ratio</b>: o Estado só aplica penas criminais para proteger os bens jurídicos mais fundamentais (vida, patrimônio, privacidade, segurança dos sistemas).</p>
-    </div>
-    <div class="stack">
-      <div class="panel line-lime"><h4>Legalidade / reserva legal</h4><p>Só lei federal em sentido estrito cria crime e comina pena (art. 22, I, CF).</p></div>
-      <div class="panel line-lime"><h4>Anterioridade</h4><p>A lei penal não retroage para prejudicar o réu (art. 5º, XL, CF).</p></div>
-      <div class="panel line-lime"><h4>Taxatividade</h4><p>O tipo penal precisa ser preciso e claro. É proibida a <b>analogia contra o réu</b> (in malam partem).</p></div>
-      <div class="panel line-violet"><h4>Por isso foram criadas leis específicas</h4><p>Até 2012, invadir um computador alheio não era crime autônomo no Brasil. O caso Carolina Dieckmann motivou a criação da <b>Lei 12.737/2012</b>.</p></div>
-    </div>
-  </div>
-  <aside class="notes">Sem tipo penal prévio e taxativo, o fato é atípico na esfera criminal. Por isso leis novas foram necessárias.</aside>
-</section>
-
-<!-- ============ 05 CONCEITO ANALÍTICO ============ -->
-<section class="slide cream" data-sec="01" data-title="CRIME = F(T,I,C)">
-  <div class="kicker ink">01 // CONCEITO ANALÍTICO DE CRIME</div>
-  <h2 class="h-l">CRIME = FATO TÍPICO + ILÍCITO + CULPÁVEL</h2>
-  <div class="g3" style="margin-top:44px">
-    <div class="card-dark">
-      <div class="tag-mono">// 01 FATO TÍPICO</div>
-      <p>Conduta + resultado + nexo causal + <b>tipicidade</b> (perfeito amoldamento à descrição prevista em lei).</p>
-      <div class="ex">TI: invadir sistema de terceiro sem autorização para obter dados configura o tipo do art. 154-A.</div>
-    </div>
-    <div class="card-dark">
-      <div class="tag-mono">// 02 ILICITUDE</div>
-      <p>A conduta contraria a ordem jurídica. Excludentes: legítima defesa, estado de necessidade e <b>exercício regular de direito</b> (art. 23).</p>
-      <div class="ex">TI: um pentest com contrato assinado e escopo delimitado pelo proprietário é lícito porque autorizado.</div>
-    </div>
-    <div class="card-dark">
-      <div class="tag-mono">// 03 CULPABILIDADE</div>
-      <p>Reprovação pessoal sobre o autor: imputabilidade, potencial consciência da ilicitude (art. 21) e exigibilidade de conduta diversa.</p>
-      <div class="ex">TI: a alegação de "desconhecer que era ilícito" raramente se sustenta para profissionais técnicos qualificados.</div>
-    </div>
-  </div>
-  <aside class="notes">Mostrar que o mesmo ato técnico (como um scan de vulnerabilidade) pode ser crime ou dever profissional, dependendo da autorização.</aside>
-</section>
-
-<!-- ============ 06 ELEMENTOS ÚTEIS ============ -->
-<section class="slide" data-sec="01" data-title="KERNEL_PENAL">
-  <div class="kicker">01 // CONCEITOS QUE APARECEM NOS CRIMES DIGITAIS</div>
-  <h2 class="h-l">6 CHAVES DE LEITURA</h2>
-  <div class="g3" style="margin-top:36px;row-gap:28px">
-    <div class="panel"><div class="tag-mono lime">ART. 18</div><h4>Dolo × culpa</h4><p>Os crimes cibernéticos previstos no CP são <b>dolosos</b>. Não existe modalidade de "invasão culposa". Negligência técnica gera responsabilidade civil ou administrativa.</p></div>
-    <div class="panel"><div class="tag-mono lime">ART. 14</div><h4>Tentativa</h4><p>Início da execução que não se consuma por motivos alheios à vontade do agente (ex.: fraude barrada pelo filtro antifraude). Pena reduzida de 1/3 a 2/3.</p></div>
-    <div class="panel"><div class="tag-mono lime">ART. 29</div><h4>Concurso de pessoas</h4><p>Quem concorre para o crime responde pelas penas a ele cominadas. Quem vende credenciais ou cede infraestrutura responde pelo resultado lesivo.</p></div>
-    <div class="panel"><div class="tag-mono violet">ART. 13, §2º</div><h4>Omissão imprópria</h4><p>Responde criminalmente quem tinha o <b>dever jurídico de agir</b> para evitar o resultado (garantidor), podia agir e omitiu-se dolosamente.</p></div>
-    <div class="panel"><div class="tag-mono violet">ARTS. 6º e 7º</div><h4>Lugar do crime</h4><p>Pela teoria da ubiquidade, considera-se praticado o crime onde ocorreu a ação ou onde se produziu o resultado. Aplicação da lei brasileira em crimes transnacionais.</p></div>
-    <div class="panel"><div class="tag-mono violet">ART. 22</div><h4>Ordem de superior</h4><p>Só isenta de pena a obediência a ordem não manifestamente ilegal advinda de autoridade <b>pública</b>. Em empresas privadas, ordens ilegais não isentam o profissional de TI.</p></div>
-  </div>
-  <aside class="notes">Conceitos fundamentais para compreender o enquadramento do insider de TI no estudo de caso.</aside>
-</section>
-
-<!-- ============ 07 CRIMES CIBERNÉTICOS / TIMELINE ============ -->
-<section class="slide" data-sec="02" data-title="CIBERCRIME.DEF">
-  <div class="g2" style="grid-template-columns:0.85fr 1.15fr;gap:60px">
-    <div>
-      <div class="kicker">02 // CRIMES CIBERNÉTICOS</div>
-      <h2 class="h-l">PRÓPRIOS<br><span class="outline">×</span> IMPRÓPRIOS</h2>
-      <div class="panel line-lime" style="margin-top:30px"><h4>Próprios (puros)</h4><p>O próprio sistema ou dado informático é o bem jurídico diretamente atacado: invasão de computadores, DDoS, sabotagem de dispositivos conectados.</p></div>
-      <div class="panel line-violet" style="margin-top:20px"><h4>Impróprios (mistos)</h4><p>O meio digital é utilizado como <b>instrumento</b> para praticar infrações tradicionais: fraudes, extorsão, ameaça e crimes contra a honra.</p></div>
-    </div>
-    <div>
-      <div class="tag-mono lime" style="margin-bottom:18px">// LINHA DO TEMPO LEGISLATIVA</div>
-      <div class="timeline">
-        <div><b>2012</b><span>Lei 12.737 (Carolina Dieckmann): tipifica o art. 154-A do CP. Lei 12.735: criação de delegacias especializadas em cibercrimes.</span></div>
-        <div><b>2014</b><span>Lei 12.965 (Marco Civil da Internet): guarda compulsória de registros de conexão e de aplicação.</span></div>
-        <div><b>2018</b><span>Lei 13.709 (LGPD) e Lei 13.718 (art. 218-C: divulgação não consentida de cena de sexo ou nudez).</span></div>
-        <div><b>2021</b><span>Lei 14.155: agrava a invasão de dispositivo e tipifica a fraude eletrônica. Lei 14.132: perseguição digital (art. 147-A).</span></div>
-        <div><b>2022</b><span>Lei 14.478 (Marco dos Criptoativos): tipifica o art. 171-A (fraude com ativos virtuais).</span></div>
-        <div><b>2023</b><span>Decreto 11.491: promulgação oficial da Convenção de Budapeste sobre Cibercrime.</span></div>
-        <div><b>2024</b><span>Lei 14.811: tipifica a intimidação sistemática virtual / cyberbullying (art. 146-A).</span></div>
-      </div>
-    </div>
-  </div>
-  <aside class="notes">Apresentar a distinção entre crimes próprios e impróprios. Em seguida, assistiremos ao Vídeo 01 com a explicação detalhada do especialista.</aside>
-</section>
-
-<!-- ============ 08 VÍDEO 01 (SOLO) ============ -->
-<section class="slide v-solo" data-sec="02" data-title="VIDEO_01">
-  <div class="kicker">02.1 // VÍDEO 01 · JOVEM PAN NEWS / DISCUTINDO DIREITO (6:59)</div>
-  <h2 class="h-m">O QUE SÃO CRIMES CIBERNÉTICOS E POR QUE ELES CRESCEM TANTO?</h2>
-  <div class="solo-frame">
-    <iframe data-id="UqOcX1VHTos" title="V01" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="solo-ctx">
-    <div class="tag-mono lime">// CONTEXTO</div>
-    <p>O professor José Milagre explica o conceito de crimes cibernéticos, como a popularização da internet e do PIX acelerou a migração do crime tradicional para o ambiente digital, e os desafios das autoridades policiais frente ao uso de VPNs, inteligência artificial e a dark web.</p>
-  </div>
-  <aside class="notes">Vídeo 01 completo do Professor José Milagre sobre conceito, escala e investigação de cibercrimes.</aside>
-</section>
-
-<!-- ============ 09 MAPA DE CRIMES ============ -->
-<section class="slide cream" data-sec="02" data-title="THREAT_MAP">
-  <div class="kicker ink">02 // MAPA RÁPIDO: CONDUTA → TIPO PENAL</div>
-  <h2 class="h-l">O QUE APARECE NA DELEGACIA</h2>
-  <table class="tbl light" style="margin-top:30px">
-    <tr><th>Conduta digital</th><th>Tipo penal</th><th>Pena-base</th></tr>
-    <tr><td>Invadir celular, conta ou servidor</td><td>Art. 154-A CP</td><td>Reclusão 1–4 anos e multa</td></tr>
-    <tr><td>Golpe por WhatsApp, e-mail ou ligação (vítima entrega dados)</td><td>Art. 171, §2º-A CP</td><td>Reclusão 4–8 anos e multa</td></tr>
-    <tr><td>Desvio de valores manipulando sistema</td><td>Art. 155, §4º-B CP</td><td>Reclusão 4–8 anos e multa</td></tr>
-    <tr><td>Calúnia, difamação ou injúria em rede social</td><td>Arts. 138–140 c/c art. 141, §2º CP</td><td>Pena <b>aplicada em triplo</b></td></tr>
-    <tr><td>Injúria racial on-line</td><td>Art. 2º-A, Lei 7.716/89</td><td>Reclusão 2–5 anos e multa</td></tr>
-    <tr><td>Divulgar nudez ou sexo sem consentimento</td><td>Art. 218-C CP</td><td>Reclusão 1–5 anos</td></tr>
-    <tr><td>Montagem/deepfake sexual com criança ou adolescente</td><td>Art. 241-C ECA</td><td>Reclusão 1–3 anos e multa</td></tr>
-    <tr><td>Perseguição / cyberstalking</td><td>Art. 147-A CP</td><td>Reclusão 6 meses–2 anos e multa</td></tr>
-  </table>
-  <aside class="notes">Panorama das ocorrências mais frequentes nas delegacias. A seguir, vemos a reportagem sobre manipulação por IA e crianças.</aside>
-</section>
-
-<!-- ============ 10 VÍDEO 02 (SOLO) ============ -->
-<section class="slide v-solo" data-sec="02" data-title="VIDEO_02">
-  <div class="kicker">02.2 // VÍDEO 02 · SBT BRASIL / SBT NEWS (3:23)</div>
-  <h2 class="h-m">IA DIFICULTA COMBATE A CRIMES CIBERNÉTICOS E COLOCA CRIANÇAS EM RISCO</h2>
-  <div class="solo-frame">
-    <iframe data-id="lo9oHmivXQw" title="V02" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="solo-ctx">
-    <div class="tag-mono lime">// CONTEXTO</div>
-    <p>Reportagem do SBT Brasil destaca como ferramentas de inteligência artificial têm sido utilizadas para criar vídeos e montagens falsas indistinguíveis da realidade, aumentando os riscos de crimes cibernéticos e de exploração infantil na internet.</p>
-  </div>
-  <aside class="notes">Vídeo 02 completo: a IA como facilitadora de novas ameaças e vulnerabilidade de crianças.</aside>
-</section>
-
-<!-- ============ 11 INVASÃO — ANATOMIA ============ -->
-<section class="slide" data-sec="03" data-title="ART_154-A.EXE">
-  <div class="pixel-v lime" style="right:60px;top:130px">154-A</div>
-  <div class="kicker">03 // INVASÃO DE DISPOSITIVO INFORMÁTICO</div>
-  <h2 class="h-l">ANATOMIA DO <span class="hl-lime">ART. 154-A</span></h2>
-  <div class="law big" style="margin-top:26px;max-width:1500px">
-    <div class="law-tag">ART. 154-A CP — REDAÇÃO DA LEI 14.155/2021</div>
-    "<u>Invadir</u> dispositivo informático <u>de uso alheio</u>, conectado ou não à rede de computadores, <u>com o fim de</u> obter, adulterar ou destruir dados ou informações <u>sem autorização expressa ou tácita do usuário</u> do dispositivo ou de instalar vulnerabilidades para obter vantagem ilícita."
-  </div>
-  <div class="g4" style="margin-top:34px;max-width:1560px">
-    <div class="panel"><div class="tag-mono lime">NÚCLEO</div><p><b>Invadir</b>: ingressar indevidamente, de forma física ou remota.</p></div>
-    <div class="panel"><div class="tag-mono lime">OBJETO</div><p>Qualquer <b>dispositivo informático</b>: PC, smartphone, servidor, nuvem, roteador, <b>controlador IoT</b>.</p></div>
-    <div class="panel"><div class="tag-mono lime">DOLO ESPECÍFICO</div><p>"Com o fim de" obter, adulterar ou destruir dados, ou de instalar vulnerabilidades.</p></div>
-    <div class="panel"><div class="tag-mono lime">SEM AUTORIZAÇÃO</div><p>Elemento nuclear. Havendo autorização legítima (pentest contratado), não há crime.</p></div>
-  </div>
-  <div class="row" style="margin-top:30px;gap:30px;align-items:stretch;max-width:1560px">
-    <div class="diff"><span class="mono dim">ANTES (2012)</span><p>Exigia <s>"violação indevida de mecanismo de segurança"</s>. Pena: detenção de 3 meses a 1 ano.</p></div>
-    <div class="arrow">→</div>
-    <div class="diff on"><span class="mono">DEPOIS (2021)</span><p>Basta a <b>falta de autorização</b> do usuário, mesmo sem senha ou firewall. Pena: <b>reclusão de 1 a 4 anos</b> e multa.</p></div>
-  </div>
-  <aside class="notes">Ponto crucial: a Lei 14.155/2021 retirou a exigência de quebra de mecanismo de segurança. O foco agora é a ausência de autorização do usuário.</aside>
-</section>
-
-<!-- ============ 12 INVASÃO — QUALIFICADORAS ============ -->
-<section class="slide" data-sec="03" data-title="ART_154-A.MODS">
-  <div class="g2" style="grid-template-columns:1.1fr 0.9fr;gap:60px">
-    <div>
-      <div class="kicker">03 // FIGURAS EQUIPARADAS, QUALIFICADORAS E AUMENTOS</div>
-      <h2 class="h-l">QUANDO A PENA SOBE</h2>
-      <table class="tbl" style="margin-top:24px">
-        <tr><th>Dispositivo</th><th>Hipótese</th><th>Consequência</th></tr>
-        <tr><td>§1º</td><td>Produzir, vender ou difundir programa <b>com o intuito</b> de permitir a invasão</td><td>Mesma pena do caput (1 a 4 anos)</td></tr>
-        <tr><td>§2º</td><td>A invasão resulta em prejuízo econômico para a vítima</td><td>Pena aumentada de 1/3 a 2/3</td></tr>
-        <tr><td>§3º</td><td>Obtém comunicações privadas, segredos comerciais ou <b>controle remoto</b> não autorizado</td><td><b>Reclusão de 2 a 5 anos</b> e multa</td></tr>
-        <tr><td>§4º</td><td>Na hipótese do §3º, comercializa ou transmite os dados a terceiros</td><td>Pena aumentada de 1/3 a 2/3</td></tr>
-        <tr><td>§5º</td><td>Praticado contra Presidente da República, governadores, prefeitos, chefes de Poder</td><td>Pena aumentada de 1/3 à metade</td></tr>
-        <tr><td>Art. 154-B</td><td>Ação penal</td><td>Condicionada à <b>representação</b>, salvo contra a Administração Pública ou concessionárias</td></tr>
-      </table>
-    </div>
-    <div class="stack">
-      <div class="panel line-violet"><div class="tag-mono violet">ART. 266, §1º CP</div><h4>Interrupção telemática</h4><p>Interromper ou perturbar serviço telegráfico, telefônico, informático ou telemático de utilidade pública (ex.: ataque DDoS massivo): detenção de 1 a 3 anos e multa.</p></div>
-      <div class="panel line-violet"><div class="tag-mono violet">ART. 298, PAR. ÚN.</div><h4>Cartão = documento</h4><p>A falsificação de cartão de crédito ou débito equipara-se à falsificação de documento particular.</p></div>
-      <div class="panel line-lime"><div class="tag-mono lime">CASOS EM TI</div><p>Stalkerware em celular · uso de credencial após desligamento · pentest fora do escopo contratado · alteração remota de controladores IoT.</p></div>
-    </div>
-  </div>
-  <aside class="notes">Destacar a figura do controle remoto não autorizado (§3º), elemento-chave no caso dos freezers na Europa e no notebook da Binance.</aside>
-</section>
-
-<!-- ============ 13 FRAUDES ============ -->
-<section class="slide" data-sec="04" data-title="FRAUD_ENGINE">
-  <div class="kicker">04 // FRAUDES ELETRÔNICAS (LEI 14.155/2021)</div>
-  <h2 class="h-l">ESTELIONATO <span class="outline">×</span> FURTO MEDIANTE FRAUDE</h2>
-  <div class="g2" style="margin-top:30px;gap:40px">
-    <div class="vs lime">
-      <div class="tag-mono">ART. 171, §2º-A — FRAUDE ELETRÔNICA</div>
-      <p class="big-p">A <b>vítima é induzida a erro e entrega</b> valores ou dados.</p>
-      <p>Praticada com dados fornecidos pela vítima ou terceiro ludibriado por contatos telefônicos, redes sociais, e-mail falso ou qualquer meio fraudulento análogo.</p>
-      <p class="mono">Ex.: falsa central de segurança bancária, phishing, clonagem de WhatsApp, golpe do boleto falso.</p>
-      <div class="pena">RECLUSÃO 4–8 ANOS + MULTA</div>
-    </div>
-    <div class="vs violet">
-      <div class="tag-mono">ART. 155, §4º-B — FURTO ELETRÔNICO</div>
-      <p class="big-p">O criminoso <b>subtrai diretamente</b> o valor sem consentimento.</p>
-      <p>Cometido mediante fraude por meio de dispositivo eletrônico ou informático, conectado ou não à rede, com ou sem quebra de segurança ou uso de programa malicioso.</p>
-      <p class="mono">Ex.: malware bancário (trojan), transferências manipulando o backend, desvios operados por credencial roubada.</p>
-      <div class="pena">RECLUSÃO 4–8 ANOS + MULTA</div>
-    </div>
-  </div>
-  <div class="g3" style="margin-top:26px;gap:24px">
-    <div class="mini"><b>Majorantes (171 §2º-B e 155 §4º-C, I):</b> pena aumentada de 1/3 a 2/3 se o crime for cometido com uso de servidor localizado fora do território nacional.</div>
-    <div class="mini"><b>Fraude com Criptoativos (art. 171-A):</b> organizar ou gerir fraude com ativos virtuais, reclusão de 4 a 8 anos. Competência: domicílio da vítima (CPP art. 70, §4º).</div>
-    <div class="mini"><b>Ação penal no estelionato (art. 171, §5º):</b> em regra condicionada à representação, salvo vítima maior de 70 anos, vulnerável ou Administração Pública.</div>
-  </div>
-  <aside class="notes">A distinção é essencial: no estelionato a vítima entrega o valor ludibriada; no furto eletrônico o agente subtrai o saldo clandestinamente pelo sistema.</aside>
-</section>
-
-<!-- ============ 14 VAZAMENTO ============ -->
-<section class="slide cream" data-sec="05" data-title="DATA_LEAK">
-  <div class="kicker ink">05 // VAZAMENTO INDEVIDO DE INFORMAÇÕES</div>
-  <h2 class="h-l">UM VAZAMENTO, TRÊS ESFERAS</h2>
-  <div class="g3" style="margin-top:34px">
-    <div class="card-dark">
-      <div class="tag-mono lime">// PENAL (CP e leis esparsas)</div>
-      <ul class="clean">
-        <li><b>154-A §§3º–4º</b>: obter e comercializar ou repassar dados oriundos de invasão</li>
-        <li><b>154</b>: violação de segredo profissional (detenção de 3 meses a 1 ano)</li>
-        <li><b>153 §1º-A</b>: divulgação de segredo ou documento confidencial da Administração</li>
-        <li><b>325 §1º, I</b>: funcionário público que <b>cede credenciais</b> de acesso a pessoa não autorizada</li>
-        <li><b>Lei 9.279/96, art. 195, XI</b>: divulgação de segredo de indústria/negócio da empresa</li>
-      </ul>
-    </div>
-    <div class="card-dark">
-      <div class="tag-mono lime">// ADMINISTRATIVA (LGPD)</div>
-      <ul class="clean">
-        <li><b>Art. 46</b>: dever legal de implementar medidas técnicas de segurança da informação</li>
-        <li><b>Art. 48</b>: dever de notificar a ANPD e os titulares em caso de incidente relevante</li>
-        <li><b>Art. 52</b>: sanções administrativas aplicadas pela ANPD (advertência, multas de até 2% do faturamento limitadas a R$ 50 mi por infração, bloqueio dos dados)</li>
-        <li>A LGPD <b>não possui tipos penais</b>.</li>
-      </ul>
-    </div>
-    <div class="card-dark">
-      <div class="tag-mono lime">// CIVIL e TRABALHISTA</div>
-      <ul class="clean">
-        <li><b>LGPD art. 42</b> e <b>CC arts. 186/927</b>: responsabilidade civil objetiva/subjetiva e dever de indenizar danos patrimoniais e morais</li>
-        <li><b>CDC</b>: responsabilidade objetiva das empresas perante os consumidores</li>
-        <li><b>CLT art. 482, "g"</b>: violação de segredo da empresa fundamenta demissão por <b>justa causa</b></li>
-        <li>Princípio da <b>independência das instâncias</b>: uma mesma conduta gera reflexos em todas as esferas.</li>
-      </ul>
-    </div>
-  </div>
-  <aside class="notes">Lembrar que a LGPD não comina crimes, mas os vazamentos ativam simultaneamente a esfera penal (art. 154-A ou 154) e a administrativa.</aside>
-</section>
-
-<!-- ============ 15 PROVA DIGITAL ============ -->
-<section class="slide" data-sec="06" data-title="FORENSICS">
-  <div class="g2" style="grid-template-columns:1fr 1fr;gap:60px">
-    <div>
-      <div class="kicker">06 // PROVA DIGITAL E INVESTIGAÇÃO</div>
-      <h2 class="h-l">SEM PROVA,<br><span class="hl-lime">SEM PUNIÇÃO</span></h2>
-      <div class="stack" style="margin-top:28px">
-        <div class="panel line-lime"><div class="tag-mono lime">MARCO CIVIL, ARTS. 13 e 15</div><p>O provedor de conexão deve guardar registros de conexão por <b>1 ano</b>. O provedor de aplicação deve guardar registros de acesso a aplicações por <b>6 meses</b>. A disponibilização depende de prévia ordem judicial (art. 22).</p></div>
-        <div class="panel line-lime"><div class="tag-mono lime">CPP, ARTS. 158-A a 158-F</div><p><b>Cadeia de custódia</b>: procedimentos de coleta, lacre, cálculo de hash criptográfico e registro documental. A quebra injustificada da cadeia pode acarretar a anulação da prova pericial.</p></div>
-        <div class="panel line-violet"><div class="tag-mono violet">CONVENÇÃO DE BUDAPESTE</div><p>Instrumento internacional para preservação imediata de dados digitais transfronteiriços e assistência mútua na obtenção de evidências eletrônicas.</p></div>
-      </div>
-    </div>
-    <div>
-      <div class="tag-mono lime" style="margin:20px 0 16px">// RECOMENDAÇÕES DA POLÍCIA E DA FORENSE</div>
-      <ol class="check">
-        <li>Captura de telas preservando URL completa, metadados, data e hora da ocorrência</li>
-        <li><b>Ata notarial</b> lavrada em cartório ou plataforma com certificação de integridade (hash)</li>
-        <li>Preservação de arquivos brutos de log e imagens forenses sem inicializar a máquina afetada</li>
-        <li>Guarda de comprovantes de transações PIX e solicitação imediata do Mecanismo Especial de Devolução (MED)</li>
-        <li>Registro formal de Boletim de Ocorrência em delegacia especializada em repressão a cibercrimes</li>
-        <li>Para organizações: acionamento imediato do Comitê de Resposta a Incidentes e avaliação de comunicação à ANPD</li>
-      </ol>
-    </div>
-  </div>
-  <aside class="notes">Como a prova digital é volátil, ela exige cuidados periciais rigorosos. Em seguida, o Vídeo 03 ilustra a rotina das delegacias e perícia.</aside>
-</section>
-
-<!-- ============ 16 VÍDEO 03 (SOLO) ============ -->
-<section class="slide v-solo" data-sec="06" data-title="VIDEO_03">
-  <div class="kicker">06.1 // VÍDEO 03 · TV GUAPOREÍ / REDE RECORD (7:19)</div>
-  <h2 class="h-m">RISCO DE CRIMES VIRTUAIS: QUAIS OS CRIMES CIBERNÉTICOS MAIS COMUNS NO BRASIL</h2>
-  <div class="solo-frame">
-    <iframe data-id="_ccU9AvMBsw" title="V03" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="solo-ctx">
-    <div class="tag-mono lime">// CONTEXTO</div>
-    <p>Reportagem sobre o aumento de registros de crimes virtuais durante a pandemia, destacando crimes contra a honra, vazamentos e extorsões, e as orientações das autoridades policiais para que as vítimas preservem as provas digitais (como prints e atas notariais).</p>
-  </div>
-  <aside class="notes">Vídeo 03: reportagem prática sobre os crimes de maior incidência e orientações policiais para prova digital.</aside>
-</section>
-
-<!-- ============ 17 RESPONSABILIDADE DO PROFISSIONAL DE TI ============ -->
-<section class="slide" data-sec="07" data-title="SYSADMIN.LIABILITY">
-  <div class="pixel-v violet" style="right:60px;top:130px">ROOT</div>
-  <div class="kicker">07 // RESPONSABILIDADE PENAL DO PROFISSIONAL DE TI</div>
-  <h2 class="h-l">QUEM TEM ROOT<br>TEM <span class="hl-violet">DEVER</span></h2>
-  <div class="g4" style="margin-top:34px;max-width:1600px">
-    <div class="panel"><div class="num">A</div><h4>Autor</h4><p>Executa pessoalmente o núcleo da conduta criminosa: o administrador que subtrai a base de clientes da empresa para comercializá-la (arts. 154-A e 155 §4º-B).</p></div>
-    <div class="panel"><div class="num">B</div><h4>Coautor / partícipe</h4><p>Art. 29 do CP: presta auxílio material deliberado — vende credenciais de acesso, abre portas de firewall ou insere rotinas a mando de quadrilhas.</p></div>
-    <div class="panel"><div class="num">C</div><h4>Garantidor omisso</h4><p>Art. 13, §2º do CP: responsável pela segurança que, tendo ciência inequívoca do ataque e o dever contratual/legal de impedir, omite-se com dolo para beneficiar o infrator.</p></div>
-    <div class="panel"><div class="num">D</div><h4>Desenvolvedor</h4><p>Art. 154-A, §1º: desenvolve ou distribui software malicioso <b>com o fim explícito</b> de viabilizar invasões. Ferramentas legítimas de segurança e pentest não configuram delito.</p></div>
-  </div>
-  <div class="row" style="margin-top:30px;gap:24px;max-width:1600px">
-    <div class="mini" style="flex:1"><b>Não isentam de culpa:</b> "ordem de chefe privado" (art. 22 do CP só ampara hierarquia pública legítima) · "desconhecimento da lei" (art. 21) · "eu só passei a minha senha".</div>
-    <div class="mini" style="flex:1"><b>Salvaguardas de conformidade:</b> escopos de teste formalizados por escrito · logs auditáveis e imutáveis · menor privilégio (PAM) · canais internos de denúncia ética · Código de Ética da SBC/ACM.</div>
-  </div>
-  <aside class="notes">O profissional de TI possui conhecimentos e acessos que potencializam o dano, atraindo maior reprovabilidade penal.</aside>
-</section>
-
-<!-- ============ 18 DIVISOR NOTÍCIAS ============ -->
-<section class="slide lime-bg" data-sec="08" data-title="RADAR_2026">
-  <div class="kicker ink">08 // NOTÍCIAS ATUAIS · OUTUBRO–NOVEMBRO DE 2026</div>
-  <h1 class="h-xxl" style="color:#0b0b0c;margin-top:60px">RADAR</h1>
-  <h1 class="h-xxl outline-ink">2026</h1>
-  <div class="row" style="margin-top:50px;gap:30px">
-    <div class="sticker dark">◎ 29/10/2026 · BINANCE: US$ 6,3 BILHÕES</div>
-    <div class="sticker dark">◎ OUT–NOV/2026 · SABOTAGEM DE FREEZERS NA EUROPA</div>
-  </div>
-  <div class="pixel-v" style="right:80px;top:140px;color:#0b0b0c;opacity:.85">ALERTA</div>
-  <aside class="notes">Transição para os casos práticos recentes. Iniciamos com a reflexão geopolítica do Vídeo 04.</aside>
-</section>
-
-<!-- ============ 19 VÍDEO 04 (SOLO) ============ -->
-<section class="slide v-solo" data-sec="08" data-title="VIDEO_04">
-  <div class="kicker">08.1 // VÍDEO 04 · MORNING SHOW / JOVEM PAN (10:43)</div>
-  <h2 class="h-m">ATAQUES CIBERNÉTICOS E GUERRA HÍBRIDA COLOCAM O OCIDENTE EM ALERTA</h2>
-  <div class="solo-frame">
-    <iframe data-id="nvXFwfIFjJY" title="V04" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="solo-ctx">
-    <div class="tag-mono lime">// CONTEXTO</div>
-    <p>O especialista em geopolítica Luiz Antonio Valle adverte que confrontos modernos entre potências ocorrem por meio de sanções econômicas, manipulação psicossocial e ofensivas cibernéticas contra infraestruturas críticas, com destaque para redes de abastecimento alimentar e sistemas financeiros.</p>
-  </div>
-  <aside class="notes">Vídeo 04: contextualização de guerra híbrida e ataques a infraestruturas essenciais (alimentos e finanças).</aside>
-</section>
-
-<!-- ============ 20 NOTÍCIA 1: BINANCE ============ -->
-<section class="slide" id="binance" data-sec="08" data-title="NEWS//BINANCE" style="padding-top:100px;padding-bottom:90px">
-  <div class="news-img img-frame"><img src="assets/crypto.jpg" alt=""></div>
-  <div style="width:1120px">
-    <div class="kicker">08.2 // NOTÍCIA INTERNACIONAL · 29/10/2026</div>
-    <h2 class="h-l" style="font-size:92px">BINANCE: <span class="hl-lime">US$ 6,3 BI</span><br>EM UM SÓ ATAQUE</h2>
-    <div class="g2" style="margin-top:20px;gap:24px">
-      <div class="panel" style="padding:18px 22px">
-        <div class="tag-mono lime">// O QUE ACONTECEU</div>
-        <ul class="clean" style="font-size:20px">
-          <li>Maior roubo de ativos digitais já documentado no setor de criptomoedas</li>
-          <li>Vetor de entrada: o <b>computador corporativo de um engenheiro</b> foi comprometido remotamente, concedendo acesso privilegiado aos sistemas de liquidação e saque</li>
-          <li>Saques suspensos preventivamente; emissores como Tether e Circle congelaram parte dos fundos dispersados</li>
-          <li>Perícias atribuem o ataque ao grupo <b>TraderTraitor / Lazarus</b>, estatal da Coreia do Norte</li>
-          <li>A corretora declarou que ressarcirá os usuários afetados com recursos próprios</li>
-        </ul>
-      </div>
-      <div class="panel line-lime" style="padding:18px 22px">
-        <div class="tag-mono lime">// LEITURA JURÍDICA (DIREITO BRASILEIRO)</div>
-        <ul class="clean" style="font-size:20px">
-          <li><b>154-A §3º</b>: invasão qualificada de dispositivo com controle remoto não autorizado</li>
-          <li><b>155 §4º-B e §4º-C, I</b>: furto eletrônico com uso de infraestrutura no exterior</li>
-          <li><b>Lei 9.613/98</b>: lavagem de ativos pela dispersão em múltiplas carteiras e mixers</li>
-          <li><b>Lei 12.850/13</b>: integração de organização criminosa cibernética transnacional</li>
-          <li><b>Art. 7º do CP</b> e Convenção de Budapeste: extraterritorialidade e cooperação judicial internacional</li>
-        </ul>
-      </div>
-    </div>
-    <div class="mini" style="margin-top:16px;font-size:19px;padding:12px 18px"><b>Lição para SI:</b> a vulnerabilidade residiu no <b>endpoint do profissional com credenciais privilegiadas</b>. Salvaguardas: segregação criptográfica de chaves (HSM/Multisig), EDR com Zero Trust, tokens FIDO2 resistentes a phishing e limites de saque automatizados com verificação humana.</div>
-    <div class="row" style="margin-top:14px;gap:18px;align-items:center"><span class="src" style="font-size:16px">Fontes: BBC News Brasil, 30/10/2026; Al Jazeera, 30/10/2026; Bloomberg, 29/10/2026.</span></div>
-  </div>
-  <aside class="notes">Destacar a conexão: assim como no caso Binance, o vetor principal de invasões de alto impacto quase sempre envolve a credencial de um profissional técnico.</aside>
-</section>
-
-<!-- ============ 21 NOTÍCIA 2: FREEZERS ============ -->
-<section class="slide" id="freezers" data-sec="08" data-title="NEWS//COLD_CHAIN" style="padding-top:100px;padding-bottom:90px">
-  <div class="news-img img-frame left"><img src="assets/freezer.jpg" alt=""></div>
-  <div style="margin-left:auto;width:1120px">
-    <div class="kicker">08.3 // NOTÍCIA INTERNACIONAL · OUTUBRO–NOVEMBRO DE 2026</div>
-    <h2 class="h-l" style="font-size:92px">FREEZERS A <span class="hl-violet">50 °C</span><br>NOS SUPERMERCADOS</h2>
-    <div class="g2" style="margin-top:20px;gap:24px">
-      <div class="panel" style="padding:18px 22px">
-        <div class="tag-mono violet">// O QUE ACONTECEU</div>
-        <ul class="clean" style="font-size:20px">
-          <li><b>Outubro/2026 (França):</b> invasores acessam remotamente controladores térmicos de centenas de supermercados (Carrefour, Monoprix), elevam a temperatura para 50 °C e causam perdas de alimentos e focos de incêndio</li>
-          <li><b>02/11/2026:</b> nova onda coordenada atinge redes na Bélgica (Delhaize, IKEA), Luxemburgo, Suécia (ICA), Estônia e Irlanda</li>
-          <li>Evaporadores foram acionados remotamente no <b>modo contínuo de degelo</b> via integrador de telemetria (Sabcobel)</li>
-          <li>Agências de cibersegurança europeias investigam hipótese de <b>sabotagem híbrida</b> contra a cadeia de alimentos</li>
-        </ul>
-      </div>
-      <div class="panel line-violet" style="padding:18px 22px">
-        <div class="tag-mono violet">// LEITURA JURÍDICA (DIREITO BRASILEIRO)</div>
-        <ul class="clean" style="font-size:20px">
-          <li><b>154-A §3º</b>: o controlador IoT industrial é dispositivo informático; a tomada de controle remoto qualifica a invasão</li>
-          <li><b>163, parágrafo único, IV</b>: dano patrimonial qualificado por motivo egoístico ou com considerável prejuízo para a vítima</li>
-          <li><b>250 do CP</b>: crime de incêndio decorrente de sobrecarga térmica (dolo eventual)</li>
-          <li><b>Lei 13.260/16 (Terrorismo)</b>: prevê sabotagem mediante mecanismos cibernéticos, mas restrita a certas finalidades e alvos essenciais, gerando debate doutrinário</li>
-        </ul>
-      </div>
-    </div>
-    <div class="mini" style="margin-top:16px;font-size:19px;padding:12px 18px"><b>Lição para SI:</b> vulnerabilidade generalizada em dispositivos OT/IoT industriais com interfaces web expostas à internet, senhas fracas de fábrica e túneis de suporte remoto sem MFA. A responsabilidade do <b>integrador de TI</b> é civil e administrativa.</div>
-    <div class="row" style="margin-top:14px;gap:18px;align-items:center"><span class="src" style="font-size:16px">Fontes: G1, 12/10/2026 e 02/11/2026; DW Brasil, 02/11/2026; Jornal Nacional, 13/10/2026.</span></div>
-  </div>
-  <aside class="notes">O ciberataque moderno atinge a infraestrutura física e afeta diretamente a sociedade (abastecimento e segurança alimentar).</aside>
-</section>
-
-<!-- ============ 22 ESTUDO DE CASO — SITUAÇÃO ============ -->
-<section class="slide" data-sec="09" data-title="CASE_FILE//C&M">
-  <div class="pixel-v lime" style="right:60px;top:130px">CASE</div>
-  <div class="g2" style="grid-template-columns:1.15fr 0.85fr;gap:50px">
-    <div>
-      <div class="kicker">09 // ESTUDO DE CASO REAL · JULHO DE 2025</div>
-      <h2 class="h-l">C&amp;M SOFTWARE:<br>O <span class="hl-lime">INSIDER</span> DO PIX</h2>
-      <p style="margin-top:20px">A <b>C&amp;M Software</b> é uma empresa de tecnologia que desenvolve a infraestrutura de mensageria que conecta fintechs e bancos médios ao Banco Central (SPI / PIX). Em julho de 2025, o sistema foi utilizado para desviar fundos das <b>contas reserva</b> de clientes como a instituição BMP e Banco Master.</p>
-      <div class="timeline compact" style="margin-top:24px">
-        <div><b>A COOPTAÇÃO</b><span>O profissional de TI João Nazareno Roque (48 anos, pós-graduado na área de computação) é abordado por uma quadrilha ao sair de um bar. O contato transcorre por celular.</span></div>
-        <div><b>A VENDA</b><span>Roque vende seu login e senha com permissões de administrador por <b>R$ 5 mil</b>. Posteriormente, opera comandos no terminal de trabalho a pedido do grupo, totalizando <b>R$ 15 mil</b> recebidos.</span></div>
-        <div><b>O ATAQUE</b><span>Com o acesso privilegiado, a quadrilha emite transferências fraudulentas instantâneas. Desvio de <b>ao menos R$ 541 milhões</b>, fracionados em contas de 29 instituições bancárias.</span></div>
-        <div><b>A RESPOSTA</b><span>A BMP formaliza Boletim de Ocorrência. Operação conjunta da Polícia Civil de SP, PF e Banco Central localiza e prende Roque em 03/07/2025, que confessa a prática.</span></div>
-      </div>
-    </div>
-    <div>
-      <div class="img-frame tall"><img src="assets/insider.jpg" alt=""></div>
-      <p class="src" style="margin-top:14px">Fontes: Agência Brasil (03/07/2025); Estadão (04/07/2025); Valor Econômico (08/07/2025). Imagem ilustrativa.</p>
-    </div>
-  </div>
-  <aside class="notes">Caso emblemático brasileiro onde o ponto de quebra da segurança não foi um software vulnerável, mas a corrupção do profissional de TI interno.</aside>
-</section>
-
-<!-- ============ 23 ESTUDO DE CASO — ANÁLISE ============ -->
-<section class="slide cream" data-sec="09" data-title="CASE_FILE//ANALYSIS">
-  <div class="kicker ink">09 // ANÁLISE JURÍDICA ESTRUTURADA</div>
-  <h2 class="h-m">FATO → PROBLEMA → CONCEITO → LEI</h2>
-  <table class="tbl light dense" style="margin-top:20px">
-    <tr><th>Fato do caso</th><th>Problema jurídico</th><th>Conceito penal</th><th>Dispositivo legal</th></tr>
-    <tr><td>Ingresso no sistema com credencial vendida de funcionário</td><td>A credencial era válida, mas o <b>uso era desautorizado pela empresa</b>. Com a Lei 14.155/21, dispensa-se quebra de barreira técnica.</td><td>Tipicidade e elemento "sem autorização"</td><td>Art. 154-A, §3º do CP</td></tr>
-    <tr><td>Desvio milionário das contas de reserva do PIX</td><td>Subtração clandestina direta através de comandos; não houve vítima ludibriada a efetuar o pagamento.</td><td>Furto mediante fraude vs. estelionato</td><td>Art. 155, §4º-B do CP</td></tr>
-    <tr><td>Roque fornece as senhas e opera comandos no terminal</td><td>O funcionário não planejou o golpe todo sozinho, mas prestou colaboração técnica determinante.</td><td>Teoria Monista do Concurso de Pessoas</td><td>Artigo 29 do CP c/c arts. 155 §4º-B e 154-A</td></tr>
-    <tr><td>Suborno pago ao profissional de empresa privada</td><td>Inexistência de tipo penal de "corrupção privada" no Brasil; restrito a agente público no CP.</td><td>Princípio da Legalidade estrita (proibição de analogia)</td><td>Art. 1º do CP (não há crime de corrupção passiva do 317)</td></tr>
-    <tr><td>Pulverização dos montantes em 29 instituições bancárias</td><td>Ocultação e dissimulação da origem ilícita dos valores através de estrutura fracionada organizada.</td><td>Crimes conexos de lavagem e organização</td><td>Lei nº 9.613/1998 e Lei nº 12.850/2013</td></tr>
-    <tr><td>Controles internos insuficientes da fornecedora de TI</td><td>Credencial individual permitia autorizar desvios milionários sem validação cruzada independente.</td><td>Responsabilidade civil e dever regulatório de segurança</td><td>CC art. 927; Res. CMN 4.893/21; Res. BCB 85/21</td></tr>
-  </table>
-  <aside class="notes">Cada elemento fático é conectado de forma rigorosa ao tipo penal correspondente e às lições de Direito Penal vistas no início.</aside>
-</section>
-
-<!-- ============ 24 ESTUDO DE CASO — CONSEQUÊNCIAS / SOLUÇÕES ============ -->
-<section class="slide" data-sec="09" data-title="CASE_FILE//PATCH">
-  <div class="kicker">09 // CONSEQUÊNCIAS E SOLUÇÕES FUNDAMENTADAS</div>
-  <h2 class="h-l">IMPACTO <span class="outline">&amp;</span> PATCH</h2>
-  <div class="g3" style="margin-top:34px">
-    <div class="panel line-lime">
-      <div class="tag-mono lime">// PROFISSIONAL DE TI</div>
-      <ul class="clean">
-        <li>Responsabilidade penal: concurso material de furto eletrônico qualificado (4 a 8 anos) e invasão qualificada, somados a eventuais imputações de organização criminosa e lavagem de capitais</li>
-        <li>A confissão espontânea opera como atenuante genérica (art. 65, III, "d" do CP), sem afastar o regime prisional fechado</li>
-        <li>Trabalhista: demissão imediata por justa causa (art. 482, "g" da CLT)</li>
-        <li>Civil: responsabilização pessoal para ressarcimento dos prejuízos</li>
-      </ul>
-    </div>
-    <div class="panel line-violet">
-      <div class="tag-mono violet">// EMPRESAS E REGULAÇÃO</div>
-      <ul class="clean">
-        <li>C&amp;M: suspensão preventiva de conectividade imposta pelo Banco Central, perda de credibilidade no mercado e ações regressivas indenizatórias</li>
-        <li>Instituições financeiras: obrigação de recomposição imediata dos saldos afetados perante os clientes</li>
-        <li>Pessoas jurídicas <b>não respondem criminalmente</b> por crimes patrimoniais cibernéticos no Brasil (apenas por crimes ambientais)</li>
-      </ul>
-    </div>
-    <div class="panel">
-      <div class="tag-mono lime">// SOLUÇÕES TÉCNICAS DE SI</div>
-      <ul class="clean">
-        <li><b>Princípio do Menor Privilégio &amp; PAM:</b> controle estrito e temporário de credenciais de administração</li>
-        <li><b>Princípio dos Quatro Olhos (Four-Eyes):</b> exigência mandatória de dupla aprovação segregada para comandos ou transferências críticas</li>
-        <li><b>Zero Trust e FIDO2:</b> autenticação multifator atrelada a hardware seguro e localização validada</li>
-        <li><b>Monitoramento Comportamental (UEBA):</b> detecção de anomalias em volume de transações e horários de comandos atípicos</li>
-        <li><b>Cultura de Prevenção a Insider Threats:</b> canal seguro de denúncia e treinamentos contra engenharia social</li>
-      </ul>
-    </div>
-  </div>
-  <aside class="notes">Apresentar as consequências severas para o indivíduo e as soluções arquiteturais de Sistemas de Informação que teriam prevenido o incidente.</aside>
-</section>
-
-<!-- ============ 25 DISCUSSÃO ============ -->
-<section class="slide violet-bg" data-sec="10" data-title="OPEN_THREAD">
-  <div class="kicker ink">10 // DISCUSSÃO COM A TURMA · CASO C&amp;M SOFTWARE</div>
-  <h2 class="h-l" style="color:#0b0b0c">E VOCÊ, O QUE ACHA?</h2>
-  <div class="stack" style="margin-top:36px;max-width:1650px">
-    <div class="q"><span>Q1</span><p>João Roque <b>não quebrou firewalls</b>: usou seu próprio acesso legítimo. Ele deve responder como autor da invasão (art. 154-A), como partícipe do furto eletrônico (art. 155 §4º-B c/c art. 29) ou por ambos? O fato de ter recebido apenas R$ 15 mil frente aos R$ 541 milhões desviados atenua a gravidade do seu ato?</p></div>
-    <div class="q"><span>Q2</span><p>Por que a conduta do grupo criminoso foi tipificada como <b>furto mediante fraude</b> (art. 155, §4º-B) e não como <b>fraude eletrônica / estelionato</b> (art. 171, §2º-A)? E se a quadrilha tivesse enganado um operador por telefone para que ele mesmo realizasse as transferências?</p></div>
-    <div class="q"><span>Q3</span><p>Pagar suborno a um colaborador do setor privado para trair a própria empresa <b>não configura crime autônomo de corrupção</b> no Brasil. Isso é uma lacuna legal? Como futuros profissionais e gestores de TI, quais barreiras técnicas e éticas são indispensáveis contra a cooptação de insiders?</p></div>
-  </div>
-  <aside class="notes">Moderar o debate abrindo para respostas dos colegas sobre as 3 perguntas.</aside>
-</section>
-
-<!-- ============ 26 CONCLUSÃO ============ -->
-<section class="slide" data-sec="11" data-title="SHUTDOWN -R">
-  <div class="kicker">11 // CONCLUSÕES</div>
-  <h2 class="h-l">5 LINHAS DE <span class="hl-lime">LOG</span></h2>
-  <ol class="logs" style="margin-top:36px">
-    <li><span>[OK]</span> Sem lei anterior taxativa, não há crime penal. O Direito brasileiro modernizou-se com as Leis 12.737/12 e 14.155/21.</li>
-    <li><span>[OK]</span> A invasão de dispositivo (art. 154-A) tipifica-se pela falta de autorização do usuário, sem necessidade de quebra física de barreira.</li>
-    <li><span>[OK]</span> Na fraude eletrônica (171 §2º-A), a vítima entrega; no furto eletrônico (155 §4º-B), o criminoso subtrai pelo sistema.</li>
-    <li><span>[WARN]</span> Vazamentos geram responsabilidade penal, administrativa (LGPD), civil e trabalhista de forma independente.</li>
-    <li><span>[CRIT]</span> O elo mais crítico da segurança da informação continua sendo o fator humano. Conhecimento técnico exige compromisso ético irrestrito.</li>
-  </ol>
-  <aside class="notes">Síntese final dos tópicos principais do seminário.</aside>
-</section>
-
-<!-- ============ 27 REFERÊNCIAS ============ -->
-<section class="slide cream" data-sec="12" data-title="SOURCES.TXT">
-  <div class="kicker ink">12 // REFERÊNCIAS E MATERIAIS</div>
-  <div class="g3 refs" style="margin-top:20px;gap:36px">
-    <div>
-      <h4>Legislação</h4>
-      <ul>
-        <li>BRASIL. Constituição da República Federativa do Brasil de 1988, art. 5º, XXXIX e XL.</li>
-        <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm" target="_blank">Código Penal (Decreto-Lei nº 2.848/1940)</a>.</li>
-        <li>BRASIL. Código de Processo Penal (Decreto-Lei nº 3.689/1941), arts. 70 §4º e 158-A a 158-F.</li>
-        <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12737.htm" target="_blank">Lei nº 12.737/2012 (Lei Carolina Dieckmann)</a>.</li>
-        <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm" target="_blank">Lei nº 12.965/2014 (Marco Civil da Internet)</a>.</li>
-        <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">Lei nº 13.709/2018 (LGPD)</a>.</li>
-        <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14155.htm" target="_blank">Lei nº 14.155/2021 (Fraude Eletrônica e Invasão)</a>.</li>
-        <li>BRASIL. Leis 7.716/89, 8.069/90 (ECA), 9.279/96, 9.613/98, 12.850/13, 13.260/16, 14.478/22 e 14.811/24.</li>
-        <li>BRASIL. <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11491.htm" target="_blank">Decreto nº 11.491/2023 (Convenção de Budapeste)</a>.</li>
-        <li>BANCO CENTRAL DO BRASIL. Resolução CMN nº 4.893/2020 e Resolução BCB nº 85/2021.</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Notícias Consultadas</h4>
-      <ul>
-        <li>BBC News Brasil. <a href="https://www.bbc.com/portuguese/articles/c820v2x0zvqko" target="_blank">Binance sofre ataque hacker de US$ 6,3 bilhões…</a> 30 out. 2026.</li>
-        <li>Al Jazeera. <a href="https://www.aljazeera.com/economy/2026/10/30/binance-says-2-54bn-in-crypto-funds-frozen-amid-potential-security-issue" target="_blank">Binance says $6.3bn stolen in biggest crypto heist…</a> 30 out. 2026.</li>
-        <li>G1. <a href="https://g1.globo.com/tecnologia/ciberseguranca/noticia/2026/10/12/hackers-invadem-geladeiras-de-supermercados-na-franca-elevam-temperatura-a-50c-e-provocam-incendios.ghtml" target="_blank">Hackers invadem geladeiras de supermercados na França…</a> 12 out. 2026.</li>
-        <li>G1. <a href="https://g1.globo.com/tecnologia/ciberseguranca/noticia/2026/11/02/hackers-atacam-supermercados-europeus-e-elevam-temperatura-de-freezers-a-50c.ghtml" target="_blank">Hackers atacam supermercados europeus e elevam freezers a 50°C</a>. 02 nov. 2026.</li>
-        <li>DW Brasil. <a href="https://www.dw.com/pt-br/o-que-se-sabe-sobre-nova-onda-de-ataques-hacker-a-supermercados-na-europa/a-79833140" target="_blank">A nova onda de ataques hacker a supermercados na Europa</a>. 02 nov. 2026.</li>
-        <li>Agência Brasil. <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2025-07/funcionario-que-deu-acesso-hackers-executarem-fraude-e-preso" target="_blank">Funcionário que deu acesso a hackers… é preso</a>. 03 jul. 2025.</li>
-        <li>Estadão. <a href="https://www.estadao.com.br/politica/blog-do-fausto-macedo/funcionario-ti-depoimento-policia-login-senha-ataque-hacker/" target="_blank">Funcionário de TI diz à Polícia que recebeu R$ 15 mil…</a> 04 jul. 2025.</li>
-        <li>Valor Econômico. <a href="https://valor.globo.com/financas/noticia/2025/07/08/o-que-se-sabe-at-agora-sobre-o-maior-crime-financeiro-da-histria-do-brasil.ghtml" target="_blank">O que se sabe até agora sobre o maior crime financeiro…</a> 08 jul. 2025.</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Vídeos Utilizados</h4>
-      <ul>
-        <li>V01 · JOVEM PAN NEWS. <a href="https://www.youtube.com/watch?v=UqOcX1VHTos" target="_blank">O que são crimes cibernéticos e por que eles crescem tanto?</a> Entrevistado: José Milagre. Fev. 2026.</li>
-        <li>V02 · SBT NEWS. <a href="https://www.youtube.com/watch?v=lo9oHmivXQw" target="_blank">IA dificulta combate a crimes cibernéticos e coloca crianças em risco</a>. SBT Brasil, Ago. 2025.</li>
-        <li>V03 · TV GUAPOREÍ. <a href="https://www.youtube.com/watch?v=_ccU9AvMBsw" target="_blank">Risco de crimes virtuais: quais os crimes cibernéticos mais comuns no Brasil</a>. Abr. 2021.</li>
-        <li>V04 · JOVEM PAN / MORNING SHOW. <a href="https://www.youtube.com/watch?v=nvXFwfIFjJY" target="_blank">Ataques cibernéticos e guerra híbrida colocam o Ocidente em alerta</a>. Nov. 2026.</li>
-      </ul>
-      <h4 style="margin-top:22px">Fontes e Imagens</h4>
-      <ul><li>Tipografia: Google Fonts (Anton, Space Grotesk, JetBrains Mono, Silkscreen). Fotografias conceituais geradas para o trabalho acadêmico.</li></ul>
-      <p class="src" style="margin-top:14px">Acesso a todos os links em: 07/11/2026.</p>
-    </div>
-  </div>
-  <aside class="notes">Todos os materiais, links e normas citadas estão catalogados.</aside>
-</section>
-
-<!-- ============ 28 FIM ============ -->
-<section class="slide" data-sec="EOF" data-title="END_OF_TRANSMISSION">
-  <div style="position:absolute;left:120px;top:200px">
-    <div class="kicker">EOF // OBRIGADO</div>
-    <h1 class="h-xxl glitch" data-text="LOGOUT">LOGOUT</h1>
-    <p class="mono dim" style="font-size:30px;margin-top:20px">&gt; perguntas_<span class="blink">█</span></p>
-  </div>
-  <svg class="globe" style="right:200px;top:220px;width:560px;height:560px" viewBox="-110 -110 220 220"><g fill="none" stroke="currentColor" stroke-width=".7"><circle r="100"/><ellipse rx="100" ry="30"/><ellipse rx="100" ry="65"/><line x1="-100" x2="100"/><ellipse ry="100" rx="20"><animate attributeName="rx" values="0;100;0" dur="8s" repeatCount="indefinite"/></ellipse><ellipse ry="100" rx="60"><animate attributeName="rx" values="60;100;0;60" dur="8s" repeatCount="indefinite"/></ellipse><ellipse ry="100" rx="90"><animate attributeName="rx" values="90;0;100;90" dur="8s" repeatCount="indefinite"/></ellipse></g></svg>
-  <div class="sticker lime" style="right:260px;bottom:170px">the law is code ↗</div>
-  <aside class="notes">Agradecer à professora Ana Clara e à turma, e abrir para a discussão e perguntas.</aside>
-</section>
-
-</div></div>
-
-<div id="progress"></div>
-<div id="hud"><button id="prev">◀</button><span id="count"></span><button id="next">▶</button><span class="hud-hint">← → navegar · F tela cheia · N notas</span></div>
-<div id="notes"></div>
-<script src="script.js"></script>
+  <div id="progress"></div>
+  <div id="hud"><button id="prev">◀</button><span id="count"></span><button id="next">▶</button><span class="hud-hint">←
+      → navegar · F tela cheia · N notas</span></div>
+  <div id="notes"></div>
+  <script src="script.js"></script>
 </body>
+
 </html>
