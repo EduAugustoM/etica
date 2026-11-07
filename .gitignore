@@ -4,3 +4,5 @@ scratch
 *.log
 .system_generated
 .gemini
+
+.vercel
